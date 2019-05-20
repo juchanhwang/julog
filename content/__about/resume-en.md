@@ -32,6 +32,7 @@ lang: 'en'
 | :--------: | ------------------------------ |
 | **GitHub** | https://github.com/juchanhwang |
 | **E-mail** | ghkdwncks96@gmail.com          |
+| **Phone** | 010-9374-9106          |
 
 # 💼 Work Experiences
 
