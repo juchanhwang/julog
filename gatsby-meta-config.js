@@ -2,7 +2,7 @@ module.exports = {
   title: `JULog`,
   description: `Blog posted about ...`,
   author: `[Ju Chan Hwang]`,
-  introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
+  introduction: `JUlog에 오신걸 환영합니다🤗 저에 대해 궁금하다면, 👆제 이름을 눌러보세요`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
