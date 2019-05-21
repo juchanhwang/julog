@@ -31,7 +31,14 @@ lang: 'en'
   </p>
 </div>
 
-`#Javascript` `#VanillaJS` `#React` 
+<div align = center>
+  <code class= language-text >#Javascript</code>
+  <code class= language-text >#VanillaJS</code>
+  <code class= language-text >#React</code> 
+  <code class= language-text >#Front-End</code>
+</div>
+
+
 
 
 
