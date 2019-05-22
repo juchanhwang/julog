@@ -10,19 +10,23 @@ lang: 'en'
 
 <div align="center">
 	<p>
-		협력과 성장을 지향하는 프론트엔드 엔지니어
-  	<code class=language-text>황주찬</code>
-  	입니다. 
+    함께 협력하며 성장하기를 꿈꾸는 프론트엔지니어, 
+    <code class=language-text>황주찬</code>입니다.<br>
+    제가
+    <code class=language-text>협력</code>과
+    <code class=language-text>성장</code>의 가치를 알게 된 이야기를 소개해드리려 합니다.
 	</p>
   <p> 
-    비전공자로 JS언어를 학습하며 '어떻게' 공부해야할지에 대한 어려움이 있었습니다.<br>
-    이 어려움을 극복하고자, 여러 교육 기관들을 탐색했고, 최신 기술보다는 JS언어의 원리와 기초를 배우며
-    <code class=language-text>vanillaJS</code>로 학습하는 코드스쿼드라는 기관에서 배우게 되었습니다.		</p>
+    비전공자로 JS언어를 '어떻게' 학습해야 하는지에 대한 어려움이 있었습니다.<br>
+    여러 탐색 끝에 <code class=language-text>vanillaJS</code>로 학습하는 '코드스쿼드'에서 배우게 되었습니다.</p>
 	<p>
-  	기초 CS에 대한 부족한 부분은 매주 마스터의 강의와, JS 스터디를 통해 극복하고,<br>
-  	미니 프로젝트를 수행하면서 부딪치는 실질적인 코드작성에 대한 어려움은 '구현'이라는 한 가지 목표를 가지고 기술 		 블로그, 공식문서를 검색하며 부족한 기술을 익혔고, 다른 개발자와의 페어 코딩을 통해 프로젝트를 마무리 할 수 있		었습니다.<br> 
-    그 과정에서 마스터와의 코드리뷰를 통해 설계방법과 좋은 코드가 무엇인지,<br>
-    그리고 협업하며 함께 성장하는 가치를 배울 수 있었습니다.<br>
+  	JS언어의 개념적인 부분은 매주 마스터의 강의와, 스터디를 통해 극복했습니다.<br>
+  	미니 프로젝트를 수행하면서 부딪치는 실질적인 코드작성에 대한 어려움은<br>
+ 		'구현'이라는 한 가지 목표를 가지고 부족한 기술적인 부분은 공식문서,<br>
+	 	기술 블로그, 그리고 영상자료를 통해 학습하며 프로젝트를 마무리할 수 있었습니다.<br>
+    <br>
+    그 과정에서 마스터와의 코드리뷰를 통해 설계하는 방법과 좋은 코드가 무엇인지,<br>
+    그리고 다른 개발자와 페어 코딩을 통해 '협업'하며 함께 '성장'하는 가치를 배울 수 있었습니다.<br>
   </p>
   <p>
   	이제는 실제 '서비스'와 '유저'를 경험하며 어떻게하면 좋은 개발자로<br>
@@ -55,7 +59,8 @@ lang: 'en'
 | ----------: | ------------------------------------------------------------ |
 |      period | 18.03 ~ 19.02                                                |
 |   **major** | 웹 프론트엔드                                                |
-| description | 코드스쿼드 윤지수 마스터님께 약 11개월간 javscript, css, html 등 전반적인 프론트엔드 개발 교육을 받았습니다.<br> 작성한 코드에 대한 마스터와의 리뷰, 함께 공부하는 개발자들과 페어 프로그래밍 등을 경험하며 협업의 가치를 알고 경험할 수 있었습니다. <br>prototype, closure,  classes, Framework에 필요한 것들, ES2015이상의 문법, 함수형 메서드(forEach, filter, reduce.. )를 활용한 데이터처리 그리고,  DOM, Event,Ajax, Templating에 대한 원리와 특성 등 javascript와 그 외의 프론트앤드 개발자로서 필요한 전반적인 개발능력을 쌓기 위한 과정들을 공부했습니다.<br><br>개인 프로젝트로 다각형의 넓이 구하기, 학점 계산기 만들기, to-do list 기능 구현하기, Array Parser 만들기 등을 JS로 구현했습니다. 마지막 과정으로 순수 'VanillaJS'로 amazon.prime 웹서비스 클론 프로젝트를 진행했습니다.<br>현재, 모든 자바스크립트 개발자가 알아야 하는 33가지 개념이라는 주제로 스터디도  진행 중입니다. <br>(https://github.com/33-js-concepts-study/JuChan.git) |
+|   **curriculum** | https://github.com/nigayo/front-end-curriculum/tree/2018_09                                               |
+| description | - 윤지수 마스터님께  javscript, css, html 등 전반적인 프론트엔드 개발 교육을 받음<br><br> <br>- prototype, closure,  classes, Framework에 필요한 것들, ES2015이상의 문법, 함수형 메서드(forEach, filter, reduce.. )를 활용한 데이터처리 그리고,  DOM, Event,Ajax, Templating에 대한 원리와 특성 등 javascript와 그 외의 프론트앤드 개발자로서 필요한 전반적인 개발능력을 쌓기 위한 과정들을 공부했습니다.<br><br>개인 프로젝트로 다각형의 넓이 구하기, 학점 계산기 만들기, to-do list 기능 구현하기, Array Parser 만들기 등을 JS로 구현했습니다. 마지막 과정으로 순수 'VanillaJS'로 amazon.prime 웹서비스 클론 프로젝트를 진행했습니다.<br>- 모든 자바스크립트 개발자가 알아야 하는 33가지 개념이라는 주제로 스터디도  진행 중 <br>(https://github.com/33-js-concepts-study/JuChan.git) |
 
 
 
@@ -79,7 +84,7 @@ lang: 'en'
 - 메인페이지 html, css 구조화 설계
 
 - 상단 plans 레이어
-  - 스크롤을 하면 화면상단에 검은색 bar가 새로 노출되고, 스크롤을 위쪽으로 올리면 다시 bar가 사라진다(scroll event)
+  - 스크롤을 하면 화면상단에 검은색 bar가 새로 노출되고, 스크롤을 위쪽으로 올리면 다시 bar가 사라진다(scroll event )
   - 검은색 bar가 노출된 상태에서 ‘see more plans’ 영역을 클릭하면 두 번째 화면처럼 레이어가 애니메이션효과와 함께 펼쳐진다.
   - 펼쳐진 상태에서 접으려면, close 버튼을 누르던가, 하단의 화살표 모양을 누르면 다시 접힌다. 
 
