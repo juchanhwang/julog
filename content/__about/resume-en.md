@@ -60,7 +60,7 @@ lang: 'en'
 |      period | 18.03 ~ 19.02                                                |
 |   **major** | 웹 프론트엔드                                                |
 |   **curriculum** | https://github.com/nigayo/front-end-curriculum/tree/2018_09                                               |
-| description | - 윤지수 마스터님께  javscript, css, html 등 전반적인 프론트엔드 개발 교육을 받음<br><br> <br>- prototype, closure,  classes, ES2015이상의 문법<br />- 함수형 메서드(forEach, filter, reduce.. )를 활용한 데이터처리  <br />- DOM, Event,Ajax, Templating에 대한 원리와 특성 학습<br>- 크롬 브라우저를 이용한 프로그래밍 디버깅<br>- 클린코딩, 결합도 낮은, 의존성 낮은 프로그래밍 (함수나누기, 객체나누기)<br /><br />**개인 프로젝트**<br />- 다각형의 넓이 구하기(<https://github.com/code-squad/javascript-polygon/pull/22>), <br />- 학점 계산기 구현(<https://github.com/code-squad/javascript-grade/pull/22>),<br />- to-do list 기능 구현(<https://github.com/code-squad/javascript-todo/pull/29>),<br />- Array Parser 만들기 등을 JS로 구현(<https://github.com/juchanhwang/javascript-json/tree/step7>), <br />- VanillaJS로 amazon.prime 웹서비스 클론 프로젝트(https://github.com/juchanhwang/javascript-amazon)<br>- 모든 자바스크립트 개발자가 알아야 하는 33가지 개념이라는 주제로 스터디도  진행 중 <br>(https://github.com/33-js-concepts-study/JuChan.git) |
+| description | - 윤지수 마스터님께  javscript, css, html 등 전반적인 프론트엔드 개발 교육을 받음<br><br> <br>- prototype, closure,  classes, ES2015이상의 문법<br />- 함수형 메서드(forEach, filter, reduce.. )를 활용한 데이터처리  <br />- DOM, Event,Ajax, Templating에 대한 원리와 특성 학습<br>- 크롬 브라우저를 이용한 프로그래밍 디버깅<br>- 클린코딩, 결합도 낮은, 의존성 낮은 프로그래밍 (함수나누기, 객체나누기)<br /><br />**개인 프로젝트**<br />- 다각형의 넓이 구하기(<https://github.com/code-squad/javascript-polygon/pull/22>), <br />- 학점 계산기 구현(<https://github.com/code-squad/javascript-grade/pull/22>),<br />- to-do list 기능 구현(<https://github.com/code-squad/javascript-todo/pull/29>),<br />- Array Parser 만들기 등을 JS로 구현(<https://github.com/juchanhwang/javascript-json/tree/step7>), <br />- VanillaJS로 amazon.prime 웹서비스 클론 프로젝트(https://github.com/juchanhwang/javascript-amazon)<br> |
 
 
 
@@ -146,6 +146,16 @@ lang: 'en'
 |     period | 16.03 ~ (휴학)                             |
 |  **major** | 경영 정보학(Management Information System) |
 | **status** | 휴학                                       |
+
+
+
+## Study
+
+- #### 모든 자바스크립트 개발자가 알아야 하는 33가지 개념
+
+(https://github.com/33-js-concepts-study/JuChan.git)
+
+> 현재도 계속 진행 중인 스터디
 
 <div align="center" class="final">
 감사합니다.
