@@ -77,6 +77,7 @@ lang: 'en'
 #### amazon.prime 웹서비스를 클론하는 프로젝트입니다
 
 - 저장소 링크: https://github.com/juchanhwang/javascript-amazon
+- WebStie: https://jumazonprime.netlify.com
 - 기술 스택: VanillaJS, JavaScript, HTML, CSS
 
 #### Description
