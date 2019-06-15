@@ -35,6 +35,8 @@ lang: 'en'
 </div>
 
 
+
+
 <div align = center>
   <code class= language-text >#Javascript</code>
   <code class= language-text >#VanillaJS</code>
@@ -61,7 +63,7 @@ lang: 'en'
 |      period | 18.03 ~ 19.02                                                |
 |   **major** | 웹 프론트엔드                                                |
 |   **curriculum** | https://github.com/nigayo/front-end-curriculum/tree/2018_09                                               |
-| description | - 윤지수 마스터님께  javscript, css, html 등 전반적인 프론트엔드 개발 교육을 받음<br><br> <br>- prototype, closure,  classes, ES2015이상의 문법<br />- 함수형 메서드(forEach, filter, reduce.. )를 활용한 데이터처리  <br />- DOM, Event,Ajax, Templating에 대한 원리와 특성 학습<br>- 크롬 브라우저를 이용한 프로그래밍 디버깅<br>- 클린코딩, 결합도 낮은, 의존성 낮은 프로그래밍 (함수나누기, 객체나누기)<br /><br />**개인 프로젝트**<br />- 다각형의 넓이 구하기(<https://github.com/code-squad/javascript-polygon/pull/22>), <br />- 학점 계산기 구현(<https://github.com/code-squad/javascript-grade/pull/22>),<br />- to-do list 기능 구현(<https://github.com/code-squad/javascript-todo/pull/29>),<br />- Array Parser 만들기 등을 JS로 구현(<https://github.com/juchanhwang/javascript-json/tree/step7>), <br />- VanillaJS로 amazon.prime 웹서비스 클론 프로젝트(https://github.com/juchanhwang/javascript-amazon)<br> |
+| description | - 윤지수 마스터님께  javscript, css, html 등 전반적인 프론트엔드 개발 교육을 받음<br><br> <br>- this, prototype, closure,  classes, ES2015이상의 문법<br />- 함수형 메서드(forEach, filter, reduce.. )를 활용한 데이터처리  <br />- DOM, Event,Ajax, Templating에 대한 원리와 특성 학습<br>- 크롬 브라우저를 이용한 프로그래밍 디버깅<br>- 클린코딩, 결합도 낮은, 의존성 낮은 프로그래밍 (함수나누기, 객체나누기)<br /><br />**개인 프로젝트**<br />- 다각형의 넓이 구하기(<https://github.com/code-squad/javascript-polygon/pull/22>), <br />- 학점 계산기 구현(<https://github.com/code-squad/javascript-grade/pull/22>),<br />- to-do list 기능 구현(<https://github.com/code-squad/javascript-todo/pull/29>),<br />- Array Parser 만들기 등을 JS로 구현(<https://github.com/juchanhwang/javascript-json/tree/step7>), <br />- VanillaJS로 amazon.prime 웹서비스 클론 프로젝트(https://github.com/juchanhwang/javascript-amazon)<br> |
 
 
 
@@ -98,9 +100,9 @@ lang: 'en'
     > 마지막 패널에서 처음 패널로 돌아올 때, 오른쪽으로 애니메이션이 동작하며 첫 패널로 돌아오게하는 기능을 구현하는 것에 있어서 어려움이 있었음. 첫 번째 패널 왼쪽에 4번째 패널을, 4번째 패널 오른쪽에 첫 번째 패널을 숨김으로써, 기능을 구현했음. 숨겨진 5번째 패널로 이동될 때, 애니메이션 동작을 주지 않은 상태로 1번째 패널로 이동하게 구현시켰음. 
 
 - 검색어 자동완성
-  - 검색어를 입력하면 실시간으로 검색결과가 노출됨. (fecth API를 이용하여 JSON 데이터를 받아옴, setTimeOut API로 노출 시간(300ms) 지연시킴)
-  - 입력창의 내용을 백스페이스로 삭제해도 일치하는 자동완성결과가 노출된다. 
-  - 실제 검색버튼을 눌러도 검색이 이뤄지진 않으며, 자동완성 결과 창은 닫힌다. 
+  - 검색어를 입력하면 실시간으로 검색결과가 노출됨 (fecth API를 이용하여 JSON 데이터를 받아옴, setTimeOut API로 노출 시간(300ms) 지연시킴)
+  - 입력창의 내용을 백스페이스로 삭제해도 일치하는 자동완성결과가 노출됨
+  - 실제 검색버튼을 눌러도 검색이 이뤄지진 않으며, 자동완성 결과 창은 닫힘 
 
     > JSON데이터를 fetch API로 받아, 그 데이터를 다루는 작업에서 실질적으로 보이지 않는 데이터를 다루는 것이 어려웠음. 개발자 도구의 네트워크 탭에서 API를 받아오는 시점과 데이터에 접근하여 데이터를 조작하는 방법에 대해 이해를 할 수 있게 됨.
 
