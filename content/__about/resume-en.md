@@ -75,7 +75,7 @@ lang: 'en'
 
 
 
-## NEXTERS
+## NEXTERS (2018.07 ~ )
 
 
 
