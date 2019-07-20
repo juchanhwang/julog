@@ -1,10 +1,10 @@
 ---
-title: 'React-Native 환경 설정하기'
+title: 'React-Native 환경 설정하기(19.07.20)'
 date: 2019-07-20
 category: 'development'
 ---
 
-# React-Native 환경 설정하기(19.07.20)
+
 
 IT 동아리 NEXTERS에서 앱을 만들고 있다. 
 나는 웹 프론트엔드 개발자이고, 안드로이드 개발자가 있다. 팀 회의 끝에 웹 개발자와 앱 개발자가 함께 개발 할 수 있는 환경을 위해 react-native를 사용하기로 결정했다.
