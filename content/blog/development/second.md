@@ -10,7 +10,7 @@ IT 동아리 NEXTERS에서 앱을 만들고 있다.
 리액트를 조금 다루어보았지만 RN은 처음이었다.
 React-Native 공식 Document를 읽으며 환경 설정을 하였지만, 마주한 것은 에러였다.
 
-![스크린샷 2019-07-20 오후 7.56.32](./images/스크린샷 2019-07-20 오후 7.56.32.png)
+![스크린샷 2019-07-20 오후 7.56.32](<https://raw.githubusercontent.com/juchanhwang/julog/master/content/blog/development/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-07-20%20%EC%98%A4%ED%9B%84%207.56.32.png>)
 
 구글링을 하면서 문제를 해결해보려고 했지만 쉽지가 않았다.
 
@@ -22,15 +22,15 @@ ios 폴더에 build 폴더를 삭제하고 다시 실행해보기도 했었고, 
 
 - CocoaPod Install
 
-![스크린샷 2019-07-20 오후 7.57.19](./images/스크린샷 2019-07-20 오후 7.57.19.png)
+![스크린샷 2019-07-20 오후 7.57.19](<https://raw.githubusercontent.com/juchanhwang/julog/master/content/blog/development/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-07-20%20%EC%98%A4%ED%9B%84%207.57.19.png>)
 
 - pod update
 
-![스크린샷 2019-07-20 오후 7.57.39](./images/스크린샷 2019-07-20 오후 7.57.39.png)
+![스크린샷 2019-07-20 오후 7.57.39](<https://raw.githubusercontent.com/juchanhwang/julog/master/content/blog/development/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-07-20%20%EC%98%A4%ED%9B%84%207.57.39.png>)
 
 설렘과 기대로 다시 실행 `react-native run-ios`
 
-![스크린샷 2019-07-20 오후 7.58.16](./images/스크린샷 2019-07-20 오후 7.58.16.png)
+![스크린샷 2019-07-20 오후 7.58.16](<https://raw.githubusercontent.com/juchanhwang/julog/master/content/blog/development/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-07-20%20%EC%98%A4%ED%9B%84%207.58.16.png>)
 
 **코코아팟이란?**
 
