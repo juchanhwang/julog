@@ -47,7 +47,7 @@ $ npm info "eslint-config-airbnb@latest" peerDependencies
 
 
 
-패키지가 설치되어있다면 다음 명령어를 실행해줍니다.
+패키지가 설치되어있다면 다음 명령어를 실행한다.
 
 ```bash
 $ yarn add eslint-config-airbnb
@@ -57,7 +57,7 @@ $ npm i eslint-config-airbnb
 
 
 
-그리고, 폴더에 `.eslintrc.js` 파일을 생성해줍니다.
+그리고, 폴더에 `.eslintrc.js` 파일을 생성한다.
 
 ```js
 module.exports = {
@@ -83,7 +83,7 @@ eslint aribnb 스타일 적용하는 것을 마쳤습니다. vscode 작업환경
 
 ![스크린샷 2019-07-23 오후 1 56 11](https://user-images.githubusercontent.com/36187948/61683926-6aaa9b00-ad52-11e9-8305-341c99484394.png)
 
-위와 같이 수행해주면, 쉽게 문제를 해결할 수 있다.
+위와 같이 수행하면, 쉽게 문제를 해결할 수 있다.
 
 
 
