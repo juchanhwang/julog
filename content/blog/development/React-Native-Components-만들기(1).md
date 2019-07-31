@@ -33,3 +33,4 @@ concept : 공부하는 시간과 휴식하는 시간 둘 다를 사용자가 관
 
 
 ![Image from iOS](https://user-images.githubusercontent.com/36187948/62020913-c87e2d80-b1ff-11e9-8fe3-e86015800462.png)
+
