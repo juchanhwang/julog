@@ -11,7 +11,6 @@ lang: 'en'
 | **GitHub** | https://github.com/juchanhwang |
 | **E-mail** | ghkdwncks96@gmail.com          |
 | **Phone**  | 010-9374-9106                  |
-
  <br/>
 
  ## 저는 이런 사람입니다
@@ -67,8 +66,7 @@ lang: 'en'
 
  # 📊 Projects
  <br/>
-
-
+ 
  ## [NEXTERS](http://teamnexters.com/) (2018.07 ~ 현재)
 
  #### Pomodoro 학습 알람 앱을 만드는 프로젝트입니다
@@ -176,7 +174,3 @@ lang: 'en'
  <div align="center" class="final">
  감사합니다.
  </div>
-
-<div align="center" class="final">
-감사합니다.
-</div>
