@@ -64,12 +64,12 @@ lang: 'en'
  <br/>
  <br/>
 
- # 📊 Projects
+# 📊 Projects
  <br/>
- 
- ## [NEXTERS](http://teamnexters.com/) (2018.07 ~ 현재)
 
- #### Pomodoro 학습 알람 앱을 만드는 프로젝트입니다
+## [NEXTERS](http://teamnexters.com/) (2018.07 ~ 현재)
+
+#### Pomodoro 학습 알람 앱을 만드는 프로젝트입니다
 
  - 저장소 링크: https://github.com/juchanhwang/Pomodoro-alarm-app
  - 기술 스택: React-Native
