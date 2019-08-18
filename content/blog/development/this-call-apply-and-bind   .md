@@ -1,7 +1,7 @@
 ---
 title: 'this, call, apply, and bind'
 date: 2019-08-11 16:21:13
-category: 'development'ㅣ
+category: 'development'
 ---
 
  대부분의 경우 `this`의 값은 함수를 호출한 방법이 결정합니다. 실행하는 중 할당으로 설정할 수 없고 함수를 호출할 때 마다 다를 수 있습니다. ECMAScript 5는 함수를 어떻게 호출했는지 상관하지 않고 `this` 값을 설정할 수 있는 `bind` 메서드를 도입했고, ECMAScript 2015는 스스로의 `this` 바인딩을 제공하지 않는 화살표 함수를 추가했습니다. (출처: MDN)
