@@ -6,50 +6,50 @@ category: 'development'
 
 
 
-1. javascript의 가장 큰 특징중의 하나는 single-threaded 언어라는 점이다.
+javascript의 가장 큰 특징중의 하나는 single-threaded 언어라는 점이다.
 
-   javascript의 엔진은 한 번에 한 가지 일밖에 하지 못한다. 즉, **단일** 호출스택을 갖고 있다.
+javascript의 엔진은 한 번에 한 가지 일밖에 하지 못한다. 즉, **단일** 호출스택을 갖고 있다.
 
-   ![javscript engine](https://hudi.kr/wp-content/uploads/2018/03/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.png)
+![javscript engine](https://hudi.kr/wp-content/uploads/2018/03/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.png)
 
-   - Memory Heap: 메모리 할당이 이루어지는 곳
+- Memory Heap: 메모리 할당이 이루어지는 곳
 
-   
 
-   ### Run Time
 
-   - 자바스크립트의 엔진은 브라우저가 제공하는 웹 API 즉, DOM, AJAX, `SetTimeout` 을 사용한다.
-     - API(application programming interface) - API는 클라이언트가 원하는 요청을 시스템에 전달하고, 응답을 다시 전달해주는 메신저이다 (참고: https://www.youtube.com/watch?v=s7wmiS2mSXY)
-   - 이벤트루프와 콜백큐(다음 시간에)
+### Run Time
 
-   ![RunTime](https://cdn-images-1.medium.com/max/2000/1*i9nTlOSPH3q-sCd5-WHg-g.png)
+- 자바스크립트의 엔진은 브라우저가 제공하는 웹 API 즉, DOM, AJAX, `SetTimeout` 을 사용한다.
+  - API(application programming interface) - API는 클라이언트가 원하는 요청을 시스템에 전달하고, 응답을 다시 전달해주는 메신저이다 (참고: https://www.youtube.com/watch?v=s7wmiS2mSXY)
+- 이벤트루프와 콜백큐(다음 시간에)
 
-   
+![RunTime](https://cdn-images-1.medium.com/max/2000/1*i9nTlOSPH3q-sCd5-WHg-g.png)
 
-   ### stack(자료 구조)
 
-   - 자료(데이터)가 하나의 방향으로만 삽입되고 삭제되는 방식의 구조(Last In First Out(LIFO), **후입선출** 구조)
 
-     ![stack](https://i1.daumcdn.net/thumb/R750x0/?fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F276C1443596E1AC1048D29)
+### stack(자료 구조)
 
-   ### Call Stack
+- 자료(데이터)가 하나의 방향으로만 삽입되고 삭제되는 방식의 구조(Last In First Out(LIFO), **후입선출** 구조)
 
-   - 함수(자료)가 호출되는 시점에 call stack에 함수가 쌓이고, 함수의 반환값이 반환되면 call stack에서 함수가 삭제된다.
+  ![stack](https://i1.daumcdn.net/thumb/R750x0/?fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F276C1443596E1AC1048D29)
 
-   ```javascript
-   function multiply(x, y) {
-       return x * y;
-   }
-   
-   function printSquare(x) {
-       var s = multiply(x, x);
-       console.log(s);
-   }
-   
-   printSquare(5);
-   ```
+### Call Stack
 
-   ![stack_img](https://cdn-images-1.medium.com/max/2000/1*1FL2WcODqRrK40rrzA5QQA.png)
+- 함수(자료)가 호출되는 시점에 call stack에 함수가 쌓이고, 함수의 반환값이 반환되면 call stack에서 함수가 삭제된다.
+
+```javascript
+function multiply(x, y) {
+    return x * y;
+}
+
+function printSquare(x) {
+    var s = multiply(x, x);
+    console.log(s);
+}
+
+printSquare(5);
+```
+
+![stack_img](https://cdn-images-1.medium.com/max/2000/1*1FL2WcODqRrK40rrzA5QQA.png)
 
 #### 1. synchronous example 
 
