@@ -4,8 +4,6 @@ date: 2019-08-81 11:01:13
 category: 'development'
 ---
 
-
-
  javascript의 가장 큰 특징중의 하나는 single-threaded 언어라는 점이다.
 
 javascript의 엔진은 한 번에 한 가지 일밖에 하지 못한다. 즉, **단일** 호출스택을 갖고 있다.
