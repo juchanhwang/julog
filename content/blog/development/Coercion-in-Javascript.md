@@ -4,7 +4,7 @@ date: 2019-09-04 12:00:00
 category: 'development'
 ---
 
-# 4. Implicit, Explicit, Nominal, Structuring and Duck Typing
+# Implicit, Explicit, Nominal, Structuring and Duck Typing
 
 
 
