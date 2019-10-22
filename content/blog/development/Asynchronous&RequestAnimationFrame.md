@@ -136,3 +136,36 @@ asyncRun(baseData, idx =>console.log(idx))
 
 
 ## window.requestAnimationFrame
+
+window.requestAnimationFrame()은 브라우저에게 수행하기를 원하는 애니메이션을 알리고 다음 리페인트가 진행되기 전에 해당 애니메이션을 업데이트하는 함수를 호출하게 합니다. 이 메소드는 리페인트 이전에 실행할 콜백을 인자로 받습니다. (MDN)
+
+> 다음 리페인트에서 그 다음 프레임을 애니메이트하려면 콜백 루틴이 반드시 스스로 requestAnimationFrame()을 호출해야합니다.
+
+```
+var start = null;
+var element = document.getElementById('SomeElementYouWantToAnimate');
+element.style.position = 'absolute';
+
+function step(timestamp) {
+  if (!start) start = timestamp;
+  var progress = timestamp - start;
+  element.style.left = Math.min(progress / 10, 200) + 'px';
+  if (progress < 2000) {
+    window.requestAnimationFrame(step);
+  }
+}
+
+window.requestAnimationFrame(step);
+```
+
+### [**The requestAnimationFrame Guide**](https://flaviocopes.com/requestanimationframe/)
+
+프레임워크 또는 샘플에서 setTimeout 또는 setInterval을 사용하여 애니메이션과 같은 시각적 변화를 수행할 수도 있지만, 이 경우 문제는 콜백이 프레임에서 특정 시점(종료 시)에 실행되고, 종종 프레임이 누락되어 버벅거림 현상이 발생할 수 있다는 점입니다.
+
+![img](https://developers.google.com/web/fundamentals/performance/rendering/images/optimize-javascript-execution/settimeout.jpg?hl=ko)
+
+이에 반면 requestAnimationFrame()은 프레임 누락없이 콜백이 실행된다.
+
+![img](https://flaviocopes.com/requestanimationframe/timeline-requestanimationframe.png)
+
+관련 영상: [Jake Archibald: In The Loop](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
