@@ -125,6 +125,8 @@ asyncRun(baseData, idx =>console.log(idx))
 
 ```
 
+
+
 ## "this" 문제
 
 `setTimeout()`에 매개변수(혹은 다른 함수)를 전달할 때, 당신의 기대와는 다르게 this의 값이 호출된다.
