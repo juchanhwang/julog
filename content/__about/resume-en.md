@@ -67,19 +67,6 @@ lang: 'en'
 # 📊 Projects
  <br/>
 
-## [NEXTERS](http://teamnexters.com/) (2018.07 ~ 현재)
-
-#### Pomodoro 학습 알람 앱을 만드는 프로젝트입니다
-
- - 저장소 링크: https://github.com/juchanhwang/Pomodoro-alarm-app
- - 기술 스택: React-Native
-
- #### Description
-
- - 와이어프레임과 IA가 나왔고, ZEPLIN을 통해 전체적인 디자인이 공유된 상태
- - 필요한 Components와 navigation을 개발하는 과정 중
- <br/>
-
  ## 아마존 사이트 클론
 
  #### amazon.prime 웹서비스를 클론하는 프로젝트입니다
@@ -150,17 +137,6 @@ lang: 'en'
  - 받아온 데이터를 search하는 기능, 구체적인 영화나 드라마 정보를 UI로 제공하는 기능 구현.
 
  <br/>
- <br/>
-
- # 🎓 Education
-
- ## 충북 대학교
-
-|            |                                            |
-| ---------: | ------------------------------------------ |
-|     period | 16.03 ~ (휴학)                             |
-|  **major** | 경영 정보학(Management Information System) |
-| **status** | 휴학                                       |
  <br/>
 
  ## Study
