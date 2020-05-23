@@ -103,7 +103,7 @@ sayMyName();
 
 
 
-> 참고
+> 출처
 >
 > - [Javascript 핵심 개념 알아보기](https://www.inflearn.com/course/%ED%95%B5%EC%8B%AC%EA%B0%9C%EB%85%90-javascript-flow)
 
