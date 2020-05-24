@@ -6,7 +6,7 @@ category: 'development'
 
 
 
-## 클로저란?
+### 클로저란?
 
 **MDN**: A closure is the combination of a function and the lexical environment within which that function was declared
 
