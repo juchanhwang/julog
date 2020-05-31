@@ -1,7 +1,7 @@
 ---
 title: 'Coercion In Javascript'
 date: 2019-09-04 12:00:00
-category: 'development'
+category: 'JavaScript'
 ---
 
 # Implicit, Explicit, Nominal, Structuring and Duck Typing

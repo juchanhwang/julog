@@ -1,7 +1,7 @@
 ---
 title: 'Asynchronous & RequestAnimationFrame'
 date: 2019-10-22 16:21:13
-category: 'development'
+category: 'JavaScript'
 ---
 
 

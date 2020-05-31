@@ -1,7 +1,7 @@
 ---
 title: 'Prototype'
 date: 2019-09-16 12:00:00
-category: 'development'
+category: 'JavaScript'
 ---
 
 

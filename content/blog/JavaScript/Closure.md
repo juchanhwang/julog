@@ -1,7 +1,7 @@
 ---
 title: 'Closure'
 date: 2020-05-18 16:00:00
-category: 'development'
+category: 'JavaScript'
 ---
 
 
