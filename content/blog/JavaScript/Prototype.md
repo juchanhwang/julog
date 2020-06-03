@@ -1,6 +1,6 @@
 ---
 title: 'Prototype'
-date: 2019-09-16 12:00:00
+date: 2020-06-03 12:00:00
 category: 'JavaScript'
 ---
 
@@ -85,7 +85,7 @@ var obj = new Object(); // === var obj = {};
 >
 > - constructor는 prototype안에 들어있다.
 
-Constructor 자격이 부여되면 new를 통해 객체를 만들어 낼 수 있게 됩니다. 이것이 함수만 new 키워드를 사용할 수 있는 이유입니다. constructor가 아니면 new를 사용할 수 없다!
+Constructor 자격이 부여되면 new를 통해 객체를 만들어 낼 수 있게 됩니다. 이것이 함수만 new 키워드를 사용할 수 있는 이유이다. constructor가 아니면 new를 사용할 수 없다!
 
 
 
@@ -203,24 +203,6 @@ for( key in obj) {
 
 > 무슨 결과가 나올까?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```javascript
 Object.prototype.keys = function() {
     return Object.keys(this);
@@ -246,24 +228,6 @@ for( key in obj) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 답.
 
 ```javascript
@@ -284,3 +248,9 @@ for( key in obj) {
 ```
 
 hasOwnProperty() => 자기 자신의 프로퍼티를 가지고 있냐
+
+
+
+## 요약
+
+생성자 함수가 있을 때, new 연산자를 써서 instance를 만들면 생성자 함수의 prototype이라고 하는 property가 instance에 `__proto__`  라는 property에 전달된다. 즉, 생성자 함수의 prototype과 instance에 proto라고 하는 property는 같은 객체를 참조한다.
