@@ -44,6 +44,8 @@ export function disableScroll() {
 
 - 해결 방법
 
+1. HotListener로 이벤트 등록
+
 ```ts
 @HostListener('scroll', [ '$event' ])
 @HostListener('touchmove', [ '$event' ])
@@ -54,9 +56,29 @@ preventScroll(ev) {
 }
 ```
 
+2. Rxjs fromEvent operator로 이벤트 등록
+
+```ts
+ngAfterViewInit() {
+    const events = [ 'scroll', 'mousewheel', 'touchmove' ];
+    this._sub.push(
+      from(events).pipe(
+        mergeMap((event) => fromEvent(this.elementRef.nativeElement, event))
+      ).subscribe((event: Event) => {
+          event.preventDefault();
+          event.stopPropagation();
+      })
+    );
+  }
+```
+
 이벤트를 등록하고 preventDefault 메소드와 stopPropagation 메소드를 사용해서 이벤트 전파를 막는 것이다.
 
-- API 호출을 통해 동적으로 변하는 list UI의 스크롤 이벤트 제어
+
+
+#### 기타 상황에서의 스크롤 제어
+
+- 모바일 디바이스에서 스크롤 제어
 
 ```html
 <div (mousemove)="preventScroll($event)"</div>
@@ -71,7 +93,7 @@ preventScroll(ev) {
 
 
 
-- api call을 통해 동적으로 list를 랜 스크롤 생성하기
+- api call을 통해 동적으로 랜더된 list UI에서 스크롤 생성 및 제어
 
 ```ts
 preventScroll(ev) {
@@ -90,3 +112,6 @@ container {
 }
 ```
 
+결과 화면
+
+<img width="378" alt="스크린샷 2020-05-26 오전 12 52 49" src="https://user-images.githubusercontent.com/36187948/84358698-7ae59600-ac02-11ea-8ef3-ce8d6a6128b5.png">
