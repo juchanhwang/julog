@@ -3,18 +3,18 @@ module.exports = {
   description: `Blog posted about ...`,
   author: `[Ju Chan Hwang]`,
   introduction: `JUlog에 오신걸 환영합니다🤗 저에 대해 궁금하다면, 👆제 이름을 눌러보세요`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://julog.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: `https://github.com/juchanhwang`, // Your GitHub account
+    github: `ghkdwncks96@gmail.com`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: ``, // Your Facebook account
+    facebook: `ghkdwncks96@naver.com`, // Your Facebook account
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'JuChanHwang/gatsby-starter-bee', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
