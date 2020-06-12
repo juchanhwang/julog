@@ -6,9 +6,9 @@ module.exports = {
   siteUrl: `https://julog.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: `ghkdwncks96@gmail.com`, // Your GitHub account
+    github: `juchanhwang`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: `ghkdwncks96@naver.com`, // Your Facebook account
+    facebook: `profile.php?id=100003720210475`, // Your Facebook account
   },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
