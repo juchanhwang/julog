@@ -7,19 +7,19 @@ import { THEME } from '../../constants'
 import './index.scss'
 
 function getTheme(checked) {
-  return checked ? THEME.DARK : THEME.LIGHT
+  return checked ? THEME.LIGHT : THEME.DARK
 }
 
 function toggleTheme(theme) {
   switch (theme) {
-    case THEME.LIGHT: {
-      Dom.addClassToBody(THEME.LIGHT)
-      Dom.removeClassToBody(THEME.DARK)
-      break
-    }
     case THEME.DARK: {
       Dom.addClassToBody(THEME.DARK)
       Dom.removeClassToBody(THEME.LIGHT)
+      break
+    }
+    case THEME.LIGHT: {
+      Dom.addClassToBody(THEME.LIGHT)
+      Dom.removeClassToBody(THEME.DARK)
       break
     }
   }
@@ -36,7 +36,7 @@ export const ThemeSwitch = () => {
   }
 
   useEffect(() => {
-    const checked = true
+    const checked = Dom.hasClassOfBody(THEME.LIGHT)
 
     handleChange(checked)
   }, [])
@@ -50,8 +50,8 @@ export const ThemeSwitch = () => {
           id="normal-switch"
           height={24}
           width={48}
-          checkedIcon={<div className="icon checkedIcon">D</div>}
-          uncheckedIcon={<div className="icon uncheckedIcon">L</div>}
+          checkedIcon={<div className="icon uncheckedIcon">D</div>}
+          uncheckedIcon={<div className="icon checkedIcon">L</div>}
           offColor={'#d9dfe2'}
           offHandleColor={'#fff'}
           onColor={'#999'}
