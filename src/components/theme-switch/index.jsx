@@ -7,7 +7,7 @@ import { THEME } from '../../constants'
 import './index.scss'
 
 function getTheme(checked) {
-  return checked ? THEME.LIGHT : THEME.DARK;
+  return checked ? THEME.DARK : THEME.LIGHT
 }
 
 function toggleTheme(theme) {
@@ -36,7 +36,7 @@ export const ThemeSwitch = () => {
   }
 
   useEffect(() => {
-    const checked = Dom.hasClassOfBody(THEME.DARK)
+    const checked = true
 
     handleChange(checked)
   }, [])
