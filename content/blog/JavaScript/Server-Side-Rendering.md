@@ -13,7 +13,7 @@ category: 'JavaScript'
 - 요청시마다 서버에서 처리한 후 새로고침으로 페이지에 대한 응답(view)
 - 웹에서 많은 정보와 기능이 많아지면서 spa개념이 생김
 
-![스크린샷 2020-06-12 오전 10 35 47](https://user-images.githubusercontent.com/36187948/84455530-871c3280-ac98-11ea-8c0c-6748da88301e.png)
+![ssr](https://user-images.githubusercontent.com/36187948/84455530-871c3280-ac98-11ea-8c0c-6748da88301e.png)
 
 
 
@@ -22,13 +22,13 @@ category: 'JavaScript'
 - 클라이언트에서 자바스크립트를 통해 렌더링 하는 방식
 - SPA는 클라이언트 사이드 렌더링 방식
 
-![스크린샷 2020-06-12 오전 10 35 55](https://user-images.githubusercontent.com/36187948/84455534-87b4c900-ac98-11ea-828f-36c2570a4c0a.png)
+![csr](https://user-images.githubusercontent.com/36187948/84455534-87b4c900-ac98-11ea-828f-36c2570a4c0a.png)
 
 
 
 ### CSR vs SSR
 
-![스크린샷 2020-06-12 오전 10 43 55](https://user-images.githubusercontent.com/36187948/84455926-a1a2db80-ac99-11ea-8db5-aa50b36fab05.png)
+![csrVsSsr](https://user-images.githubusercontent.com/36187948/84455926-a1a2db80-ac99-11ea-8db5-aa50b36fab05.png)
 
 
 
