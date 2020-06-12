@@ -1,5 +1,5 @@
 ---
-title: '서버 사이드 랜더링(SSR)'
+title: '서버 사이드 렌더링(SSR)'
 date: 2020-06-12 16:00:00
 category: 'JavaScript'
 
@@ -7,7 +7,7 @@ category: 'JavaScript'
 
 
 
-## 서버 사이드 랜더링(SSR)
+## 서버 사이드 렌더링(SSR)
 
 - 전통적인 웹 애플리케이션은 서버 사이드 렌더링 방식
 - 요청시마다 서버에서 처리한 후 새로고침으로 페이지에 대한 응답(view)
@@ -67,6 +67,8 @@ JavaScript를 지원하지 않는 디바이스가 존재하기도 하고 JavaScr
 ### 첫 페이지를 빠르게 표시하기
 
 사용자의 재방문을 유도하려면 첫 페이지를 빠르게 표시하는 것이 무엇보다 중요하다. 첫 페이지가 3초 안에 표시되지 않는다면 [53%의 모바일 사용자가 재방문하지 않는다는 통계](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)도 있다. 사이트를 방문한 사용자가 다른 곳으로 발길을 돌리는 것을 원하지 않는다면 앱을 최대한 빠르게 실행하는 것이 좋다.
+
+
 
 
 
