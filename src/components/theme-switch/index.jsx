@@ -32,19 +32,19 @@ const SunIcon = () => {
   )
 }
 function getTheme(checked) {
-  return checked ? THEME.DARK : THEME.LIGHT
+  return checked ? THEME.LIGHT : THEME.DARK
 }
 
 function toggleTheme(theme) {
   switch (theme) {
-    case THEME.LIGHT: {
-      Dom.addClassToBody(THEME.LIGHT)
-      Dom.removeClassToBody(THEME.DARK)
-      break
-    }
     case THEME.DARK: {
       Dom.addClassToBody(THEME.DARK)
       Dom.removeClassToBody(THEME.LIGHT)
+      break
+    }
+    case THEME.LIGHT: {
+      Dom.addClassToBody(THEME.LIGHT)
+      Dom.removeClassToBody(THEME.DARK)
       break
     }
   }
@@ -61,7 +61,7 @@ export const ThemeSwitch = () => {
   }
 
   useEffect(() => {
-    const checked = Dom.hasClassOfBody(THEME.DARK)
+    const checked = Dom.hasClassOfBody(THEME.LIGHT)
 
     handleChange(checked)
   }, [])
