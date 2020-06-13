@@ -2,6 +2,7 @@
 title: 'React-Native 환경 설정하기'
 date: 2019-07-20
 category: 'development'
+draft: false
 ---
 
 IT 동아리 NEXTERS에서 앱을 만들고 있다.

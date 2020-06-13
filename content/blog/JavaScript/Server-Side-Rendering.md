@@ -2,7 +2,7 @@
 title: '서버 사이드 렌더링(SSR)'
 date: 2020-06-12 16:00:00
 category: 'JavaScript'
-
+draft: false
 ---
 
 

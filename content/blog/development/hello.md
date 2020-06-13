@@ -2,6 +2,7 @@
 title: 'Welcome Bee starter'
 date: 2019-1-1 16:21:13
 category: 'development'
+draft: false
 ---
 
 ![](./images/hello.png)

@@ -2,6 +2,7 @@
 title: 'Function Scope, Block Scope and Lexical Scope'
 date: 2019-09-16 12:00:00
 category: 'JavaScript'
+draft: false
 ---
 
 ## 스코프 (scope)
