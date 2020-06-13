@@ -2,6 +2,7 @@
 title: 'Callback Function'
 date: 2020-04-18 16:00:00
 category: 'JavaScript'
+draft: false
 ---
 
 

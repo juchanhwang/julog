@@ -2,6 +2,7 @@
 title: 'Data Types'
 date: 2020-06-04 16:00:00
 category: 'JavaScript'
+draft: false
 ---
 
 
