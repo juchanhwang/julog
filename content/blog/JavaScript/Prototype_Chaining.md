@@ -2,7 +2,7 @@
 title: 'Prototype Chaining'
 date: 2020-06-15 16:00:00
 category: 'JavaScript'
-draft: true
+draft: false
 ---
 
 
