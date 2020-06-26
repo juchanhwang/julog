@@ -5,52 +5,41 @@ category: 'Today I Learned'
 draft: true
 ---
 
+## 문제의 상황 및 요구사항
 
-
-```js
-document.addEventListener('touchstart', handleTouchStart, false);        
-document.addEventListener('touchmove', handleTouchMove, false);
-
-var xDown = null;                                                        
-var yDown = null;
-
-function getTouches(evt) {
-  return evt.touches ||             // browser API
-         evt.originalEvent.touches; // jQuery
-}                                                     
-
-function handleTouchStart(evt) {
-    const firstTouch = getTouches(evt)[0];                                      
-    xDown = firstTouch.clientX;                                      
-    yDown = firstTouch.clientY;                                      
-};                                                
-
-function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
-
-    var xUp = evt.touches[0].clientX;                                    
-    var yUp = evt.touches[0].clientY;
-
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
-
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
-            /* left swipe */ 
-        } else {
-            /* right swipe */
-        }                       
-    } else {
-        if ( yDiff > 0 ) {
-            /* up swipe */ 
-        } else { 
-            /* down swipe */
-        }                                                                 
-    }
-    /* reset values */
-    xDown = null;
-    yDown = null;                                             
-};
+```ts
+combineLatest([
+  fromEvent(element, 'touchmove', { passive: true }).pipe(
+    filter(() => {
+      const { scrollWidth, scrollLeft, clientWidth } = this.elementRef.nativeElement;
+      return scrollWidth - scrollLeft - clientWidth <= 0;
+    }),
+    map((touchMove: TouchEvent) => touchMove.changedTouches[0].clientX),
+    tap((x) => touchStartX = touchStartX || x),
+    tap((x) => {
+      const maxDiff = element.clientWidth * 0.3; // 디바이스 가로폭 30%까지만 스크롤 추가 허용
+      const xDiff = touchStartX - x;
+      percentage = Math.min(xDiff, maxDiff) / maxDiff;
+      if (reqId) cancelAnimationFrame(reqId);
+      reqId = requestAnimationFrame(() => {
+        element.style.transform = `translateX(-${xDiff / 2}px)`;
+        this.circle.nativeElement.style.strokeDasharray = `${Math.round(percentage * 100)}, 100`;
+      });
+    })
+  ),
+  fromEvent(element, 'touchend', { passive: true }).pipe(
+    tap(() => {
+      if (percentage >= 1) {
+        this.router.navigate(this.navigateUrl);
+      } else {
+        if (reqId) cancelAnimationFrame(reqId);
+        reqId = requestAnimationFrame(() => {
+          element.style.transform = `translateX(0px)`;
+          this.circle.nativeElement.style.strokeDasharray = `0, 100`;
+        });
+      }
+      touchStartX = 0;
+    })
+  )
+]).subscribe()
 ```
