@@ -1,5 +1,5 @@
 ---
-title: "Mobile touch Swipe indicator(20200625)"
+title: "Mobile Touch Swipe Indicator(20200625)"
 date: 2020-06-25 16:00:00
 category: 'Today I Learned'
 draft: false
