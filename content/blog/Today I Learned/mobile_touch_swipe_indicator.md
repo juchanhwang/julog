@@ -11,15 +11,15 @@ draft: false
 
 - 추가적인 item은 오른쪽 스와이핑 액션을 통해 해당 페이지로 넘어가야함
 
-  <img width="350" alt="스크린샷 2020-06-27 오후 3 57 51" src="https://user-images.githubusercontent.com/36187948/85916788-f8f69d80-b88e-11ea-92a9-85bde0edb959.png">
+  <img width="600" alt="스크린샷 2020-06-27 오후 3 57 51" src="https://user-images.githubusercontent.com/36187948/85916788-f8f69d80-b88e-11ea-92a9-85bde0edb959.png">
 
 - touchmove(스와이핑)이벤트가 발생해는 x값에 따라 퍼센테이지를 UI로 제공
 
-<img width="320" alt="스크린샷 2020-06-27 오후 4 01 50" src="https://user-images.githubusercontent.com/36187948/85916862-94880e00-b88f-11ea-9951-fb4734941e4a.png">
+<img width="600" alt="스크린샷 2020-06-27 오후 4 01 50" src="https://user-images.githubusercontent.com/36187948/85916862-94880e00-b88f-11ea-9951-fb4734941e4a.png">
 
-<img width="320" alt="스크린샷 2020-06-27 오후 4 02 01" src="https://user-images.githubusercontent.com/36187948/85916863-9782fe80-b88f-11ea-87bc-b76b043ef0b2.png">
+<img width="600" alt="스크린샷 2020-06-27 오후 4 02 01" src="https://user-images.githubusercontent.com/36187948/85916863-9782fe80-b88f-11ea-87bc-b76b043ef0b2.png">
 
-<img width="320" alt="스크린샷 2020-06-27 오후 4 02 11" src="https://user-images.githubusercontent.com/36187948/85916864-9782fe80-b88f-11ea-8839-8b41a3c16bf9.png">
+<img width="600" alt="스크린샷 2020-06-27 오후 4 02 11" src="https://user-images.githubusercontent.com/36187948/85916864-9782fe80-b88f-11ea-8839-8b41a3c16bf9.png">
 
 ## 해결 방안
 
@@ -93,9 +93,10 @@ private swipeToSeeMore() {
 
 #### 결과 화면
 
-<video width="400" height="240" controls>
+<video width="600" controls>
   <source src="./sources/swipe.mov" type="video/mp4">
 </video>
+
 
 
 
