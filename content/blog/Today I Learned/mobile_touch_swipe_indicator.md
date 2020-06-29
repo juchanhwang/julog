@@ -15,11 +15,11 @@ draft: false
 
 - touchmove(스와이핑)이벤트가 발생해는 x값에 따라 퍼센테이지를 UI로 제공
 
-<img width="600" alt="스크린샷 2020-06-27 오후 4 01 50" src="https://user-images.githubusercontent.com/36187948/85916862-94880e00-b88f-11ea-9951-fb4734941e4a.png">
+  <img width="600" alt="스크린샷 2020-06-27 오후 4 01 50" src="https://user-images.githubusercontent.com/36187948/85916862-94880e00-b88f-11ea-9951-fb4734941e4a.png">
 
-<img width="600" alt="스크린샷 2020-06-27 오후 4 02 01" src="https://user-images.githubusercontent.com/36187948/85916863-9782fe80-b88f-11ea-87bc-b76b043ef0b2.png">
+  <img width="600" alt="스크린샷 2020-06-27 오후 4 02 01" src="https://user-images.githubusercontent.com/36187948/85916863-9782fe80-b88f-11ea-87bc-b76b043ef0b2.png">
 
-<img width="600" alt="스크린샷 2020-06-27 오후 4 02 11" src="https://user-images.githubusercontent.com/36187948/85916864-9782fe80-b88f-11ea-8839-8b41a3c16bf9.png">
+  <img width="600" alt="스크린샷 2020-06-27 오후 4 02 11" src="https://user-images.githubusercontent.com/36187948/85916864-9782fe80-b88f-11ea-8839-8b41a3c16bf9.png">
 
 ## 해결 방안
 
