@@ -29,7 +29,7 @@ console.log(park.nose); // => 1
 
 > 메모리에는 eyes와 nose가 두 개씩 총 4개 할당된다. 객체를100개 만들면 200개의 변수가 메모리에 할당된다
 
-
+#
 
 ```javascript
 function Person() {}
@@ -46,17 +46,17 @@ console.log(kim.eyes); // => 2
 
 > Person.prototype이라는 빈 Object가 어딘가에 존재하고, Person 함수로부터 생성된 객체(kim, park)들은 어딘가에 존재하는 Object에 들어있는 값을 모두 갖다쓸 수 있다.
 
-
+#
 
 ## Prototype Link와 Prototype Object
 
-자바스크립트에는 **Prototype Link** 와 **Prototype Object**라는 것이 존재합니다. 그리고 이 둘을 통틀어 **Prototype**이라고 부른다.
+자바스크립트에는 **Prototype Link** 와 **Prototype Object**라는 것이 존재한다. 그리고, 이 둘을 통틀어 **Prototype**이라고 부른다.
 
-
+#
 
 ### Prototype Object
 
-객체는 언제나 함수(Function)로 생성됩니다.
+객체는 언제나 함수(Function)로 생성된다.
 
 ```javascript
 function Person() {} // => 함수
@@ -73,7 +73,7 @@ var obj = new Object(); // === var obj = {};
 
 함수가 정의될 때는 2가지 일이 동시에 이루어진다.
 
-
+#
 
 #### **1.해당 함수에 Constructor(생성자) 자격 부여**
 
@@ -84,11 +84,11 @@ var obj = new Object(); // === var obj = {};
 >
 > - constructor는 prototype안에 들어있다.
 
-Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 낼 수 있게 됩니다. 이것이 함수만 new 연산자를 사용할 수 있는 이유이다. constructor가 아니면 new 연산자를 사용할 수 없다.
+Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 낼 수 있게 된다. 이것이 함수만 new 연산자를 사용할 수 있는 이유이다. constructor가 아니면 new 연산자를 사용할 수 없다.
 
 <img width="100%" padding="0 12px" alt="" src="https://user-images.githubusercontent.com/36187948/86129574-dfb75080-bb1d-11ea-918c-4699eb5ca7da.png">
 
-
+#
 
 #### **2.해당 함수의 Prototype Object 생성 및 연결**
 
@@ -98,6 +98,8 @@ Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 �
 
 함수를 정의하면 위와 같이 된다. 그리고 생성된 함수는 prototype이라는 속성을 통해 Prototype Object에 접근할 수 있습니다. Prototype Object는 일반적인 객체와 같으며 기본적인 속성으로 **constructor**와 `__proto__`를 가지고 있다.
 
+#
+
 <img width="100%" padding="0 12px" alt="스크린샷 2020-06-30 오후 10 05 26" src="https://cdn-images-1.medium.com/max/1600/1*NpSb7ha6lMdZpc8hFvBl2g.png">
 
 prototype 속성으로 Prototype Object에 접근
@@ -105,7 +107,7 @@ prototype 속성으로 Prototype Object에 접근
 **constructor**는 Prototype Object와 같이 생성되었던 함수를 가리키고 있다.
 **______proto______**는 Prototype Link다.
 
-
+#
 
 ```javascript
 function Person() {};
@@ -122,15 +124,13 @@ console.log(kim.eyes); // => 2
 
 왜 Person.prototype을 사용하는지 눈에 보이는가?
 
-
-
 <img width="100%" alt="" src="https://cdn-images-1.medium.com/max/1600/1*PLRkoBdVZv9vZW1Z4FlLJw.png">
 
 Person.prototype 객체에 eyes와 nose 속성이 추가되었다.
 
 Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/삭제 할 수 있다. kim과 park은 Person 함수를 통해 생성되었으니 Person.prototype을 참조할 수 있게 된다.
 
-#### 
+#
 
 ### prototype Link
 
@@ -147,25 +147,19 @@ Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/�
 
 <img width="100%" padding="0 12px" alt="" src="https://cdn-images-1.medium.com/max/1600/1*4V9q1tS5GWLU4sMkhOVNEg.png">
 
-**______proto______**를 들여다보니 Person 함수의 Prototype Object를 가리키고 있었다.
+`__proto__`를 들여다보니 Person 함수의 Prototype Object를 가리키고 있었다.
 
-
+#
 
 ![img](https://cdn-images-1.medium.com/max/1600/1*jMTxqTYDZGhykJQoimmb0A.png)
 
+kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾을 때 까지 상위 프로토타입을 탐색한다. 최상위인 Object의 Prototype Object까지 도달했는데도 못찾았을 경우 **undefined를** 리턴한다. 
 
-
-kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾을 때 까지 상위 프로토타입을 탐색합니다. 최상위인 Object의 Prototype Object까지 도달했는데도 못찾았을 경우 **undefined를** 리턴한다. 
-
-
+#
 
 ![img](https://cdn-images-1.medium.com/max/1600/1*mwPfPuTeiQiGoPmcAXB-Kg.png)
 
-
-
-이런 프로토타입 체인 구조 때문에 모든 객체는 **Object의** 자식이라고 불리고, **Object Prototype Object**에 있는 모든 속성을 사용할 수 있습니다. 한 가지 예를 들면 toString함수가 있겠습니다.
-
-
+이런 프로토타입 체인 구조 때문에 모든 객체는 **Object의** 자식이라고 불리고, **Object Prototype Object**에 있는 모든 속성을 사용할 수 있다.
 
 <img width="100%" padding="0 12px" alt="" src="https://cdn-images-1.medium.com/max/1600/1*VW4PFea8x7LQiHp3PI8Hrg.png">
 
@@ -175,11 +169,9 @@ Object속성인 toString함수를 kim도 사용가능
 
 ####  `__proto__`라는 prototype 에 대한 link는 **상위에서 물려받은 객체의 프로토타입에 대한 정보**이며 `Prototype Object`는 자신을 원형으로 만들어질 **새로운 객체들 즉 하위로 물려줄 연결에 대한 속성**이다.
 
-
+#
 
 ## 4.1 객체 자신이 소유하고 있는 결과만 나오게 하려면 어떻게 수정해야할까?
-
-## 
 
 ```javascript
 Object.prototype.keys = function() {
@@ -219,7 +211,7 @@ for( key in obj) {
 >
 > 자바스크립트 엔진이 판단 한 것. 체인으로 연결되어있기 때문에 내가 추가한 최상위 메소드까지 노출 시킨 것. 
 
-
+#
 
 ## 답.
 
@@ -242,13 +234,13 @@ for( key in obj) {
 
 hasOwnProperty() => 자기 자신의 프로퍼티를 가지고 있냐
 
-
+#
 
 ## 요약
 
 생성자 함수가 있을 때, new 연산자를 써서 instance를 만들면 생성자 함수의 prototype이라고 하는 property가 instance에 `__proto__`  라는 property에 전달된다. 즉, 생성자 함수의 prototype과 instance에 proto라고 하는 property는 같은 객체를 참조한다.
 
-
+#
 
 > ### 참고 및 참조
 >
