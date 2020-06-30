@@ -63,15 +63,13 @@ function Person() {} // => 함수
 var personObject = new Person(); // => 함수로 객체를 생성
 ```
 
-personObject 객체는 Person이라는 함수로 생성된 객체입니다. 이렇듯 언제나 객체는 함수에서 시작됩니다. 우리가 많이 쓰는 일반적인 객체 생성도 예외는 아닙니다.
+personObject 객체는 Person이라는 함수로 생성된 객체이다. 이렇듯 언제나 객체는 함수에서 시작된다. 우리가 많이 쓰는 일반적인 객체 생성도 예외는 아니다.
 
 ```javascript
 var obj = new Object(); // === var obj = {};
 ```
 
 위 코드에서 **Object**가 자바스크립트에서 기본적으로 제공하는 **함수**다.
-
-
 
 함수가 정의될 때는 2가지 일이 동시에 이루어진다.
 
@@ -88,21 +86,19 @@ var obj = new Object(); // === var obj = {};
 
 Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 낼 수 있게 됩니다. 이것이 함수만 new 연산자를 사용할 수 있는 이유이다. constructor가 아니면 new 연산자를 사용할 수 없다.
 
+<img width="100%" padding="0 12px" alt="" src="https://user-images.githubusercontent.com/36187948/86129574-dfb75080-bb1d-11ea-918c-4699eb5ca7da.png">
+
 
 
 #### **2.해당 함수의 Prototype Object 생성 및 연결**
 
 함수를 정의하면 함수만 생성되는 것이 아니라 Prototype Object도 같이 생성이 된다.
 
-
-
 ![img](https://cdn-images-1.medium.com/max/1600/1*PZe_YnLftVZwT1dNs1Iu0A.png)
 
 함수를 정의하면 위와 같이 된다. 그리고 생성된 함수는 prototype이라는 속성을 통해 Prototype Object에 접근할 수 있습니다. Prototype Object는 일반적인 객체와 같으며 기본적인 속성으로 **constructor**와 `__proto__`를 가지고 있다.
 
-
-
-![img](https://cdn-images-1.medium.com/max/1600/1*NpSb7ha6lMdZpc8hFvBl2g.png)
+<img width="100%" padding="0 12px" alt="스크린샷 2020-06-30 오후 10 05 26" src="https://cdn-images-1.medium.com/max/1600/1*NpSb7ha6lMdZpc8hFvBl2g.png">
 
 prototype 속성으로 Prototype Object에 접근
 
@@ -128,7 +124,7 @@ console.log(kim.eyes); // => 2
 
 
 
-![img](https://cdn-images-1.medium.com/max/1600/1*PLRkoBdVZv9vZW1Z4FlLJw.png)
+<img width="100%" alt="" src="https://cdn-images-1.medium.com/max/1600/1*PLRkoBdVZv9vZW1Z4FlLJw.png">
 
 Person.prototype 객체에 eyes와 nose 속성이 추가되었다.
 
@@ -149,9 +145,7 @@ Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/�
 
 `__proto__`는 객체가 생성될 때 조상이었던 함수의 Prototype Object를 가리킨다. kim객체는 Person함수로부터 생성되었으니 Person 함수의 Prototype Object를 가리키고 있는 것이다.
 
-
-
-![img](https://cdn-images-1.medium.com/max/1600/1*4V9q1tS5GWLU4sMkhOVNEg.png)
+<img width="100%" padding="0 12px" alt="" src="https://cdn-images-1.medium.com/max/1600/1*4V9q1tS5GWLU4sMkhOVNEg.png">
 
 **______proto______**를 들여다보니 Person 함수의 Prototype Object를 가리키고 있었다.
 
@@ -173,7 +167,7 @@ kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾
 
 
 
-![img](https://cdn-images-1.medium.com/max/1600/1*VW4PFea8x7LQiHp3PI8Hrg.png)
+<img width="100%" padding="0 12px" alt="" src="https://cdn-images-1.medium.com/max/1600/1*VW4PFea8x7LQiHp3PI8Hrg.png">
 
 Object속성인 toString함수를 kim도 사용가능
 
