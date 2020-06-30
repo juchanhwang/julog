@@ -5,11 +5,32 @@ category: 'JavaScript'
 draft: false
 ---
 
-
-
 **어떠한 객체가 만들어지기 위해 그 객체의 모태가 되는 녀석을 프로토타입**이라고 한다. 
 
 자바스크립트의 모든 객체는 자신의 부모 역할을 담당하는 객체와 연결되어 있다. 그리고 이것은 마치 객체 지향의 상속 개념과 같이 부모 객체의 프로퍼티 또는 메소드를 상속받아 사용할 수 있게 한다. 이러한 부모 객체를 Prototype(프로토타입) 객체 또는 줄여서 Prototype(프로토타입)이라 한다.
+
+#
+
+조금 더 자세히, 그리고 구체적으로 들여다보자.
+
+우리가 기본적으로 알아햐나는 개념 한 가지가 있다. **객체**는  **함수(Function)로 생성된다**는 것이다.
+
+```javascript
+function Person() {} // => 함수
+var personObject = new Person(); // => 함수로 객체를 생성
+```
+
+personObject 객체는 Person이라는 함수로 생성된 객체이다. 이렇듯 언제나 객체는 함수에서 시작된다. 우리가 많이 쓰는 일반적인 객체 생성도 예외는 아니다.
+
+```javascript
+var obj = new Object(); // === var obj = {};
+```
+
+위 코드에서 **Object**가 자바스크립트에서 기본적으로 제공하는 **함수**다.
+
+
+
+이제 본격적으로 prototype에대해 알아보자.
 
 ```javascript
 function Person() {
@@ -55,21 +76,6 @@ console.log(kim.eyes); // => 2
 #
 
 ### Prototype Object
-
-객체는 언제나 함수(Function)로 생성된다.
-
-```javascript
-function Person() {} // => 함수
-var personObject = new Person(); // => 함수로 객체를 생성
-```
-
-personObject 객체는 Person이라는 함수로 생성된 객체이다. 이렇듯 언제나 객체는 함수에서 시작된다. 우리가 많이 쓰는 일반적인 객체 생성도 예외는 아니다.
-
-```javascript
-var obj = new Object(); // === var obj = {};
-```
-
-위 코드에서 **Object**가 자바스크립트에서 기본적으로 제공하는 **함수**다.
 
 함수가 정의될 때는 2가지 일이 동시에 이루어진다.
 
