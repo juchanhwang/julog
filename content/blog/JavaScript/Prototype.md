@@ -9,9 +9,7 @@ draft: false
 
 자바스크립트의 모든 객체는 자신의 부모 역할을 담당하는 객체와 연결되어 있다. 그리고 이것은 마치 객체 지향의 상속 개념과 같이 부모 객체의 프로퍼티 또는 메소드를 상속받아 사용할 수 있게 한다. 이러한 부모 객체를 Prototype(프로토타입) 객체 또는 줄여서 Prototype(프로토타입)이라 한다.
 
-
-
-
+### 
 
 조금 더 자세히, 그리고 구체적으로 들여다보자.
 
@@ -30,9 +28,7 @@ var obj = new Object(); // === var obj = {};
 
 위 코드에서 **Object**가 자바스크립트에서 기본적으로 제공하는 **함수**다.
 
-
-
-
+### 
 
 이제 본격적으로 prototype에대해 알아보자.
 
@@ -54,9 +50,7 @@ console.log(park.nose); // => 1
 
 > 메모리에는 eyes와 nose가 두 개씩 총 4개 할당된다. 객체를100개 만들면 200개의 변수가 메모리에 할당된다
 
-
-
-
+### 
 
 ```javascript
 function Person() {}
@@ -73,25 +67,19 @@ console.log(kim.eyes); // => 2
 
 > Person.prototype이라는 빈 Object가 어딘가에 존재하고, Person 함수로부터 생성된 객체(kim, park)들은 어딘가에 존재하는 Object에 들어있는 값을 모두 갖다쓸 수 있다.
 
-
-
-
+### 
 
 ## Prototype Link와 Prototype Object
 
 자바스크립트에는 **Prototype Link** 와 **Prototype Object**라는 것이 존재한다. 그리고, 이 둘을 통틀어 **Prototype**이라고 부른다.
 
-
-
-
+### 
 
 ### Prototype Object
 
 함수가 정의될 때는 2가지 일이 동시에 이루어진다.
 
-
-
-
+### 
 
 #### **1.해당 함수에 Constructor(생성자) 자격 부여**
 
@@ -106,9 +94,7 @@ Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 �
 
 <img width="100%" padding="0 12px" alt="" src="https://user-images.githubusercontent.com/36187948/86129574-dfb75080-bb1d-11ea-918c-4699eb5ca7da.png">
 
-
-
-
+### 
 
 #### **2.해당 함수의 Prototype Object 생성 및 연결**
 
@@ -118,9 +104,7 @@ Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 �
 
 함수를 정의하면 위와 같이 된다. 그리고 생성된 함수는 prototype이라는 속성을 통해 Prototype Object에 접근할 수 있습니다. Prototype Object는 일반적인 객체와 같으며 기본적인 속성으로 **constructor**와 `__proto__`를 가지고 있다.
 
-
-
-
+### 
 
 <img width="100%" padding="0 12px" alt="스크린샷 2020-06-30 오후 10 05 26" src="https://cdn-images-1.medium.com/max/1600/1*NpSb7ha6lMdZpc8hFvBl2g.png">
 
@@ -129,9 +113,7 @@ prototype 속성으로 Prototype Object에 접근
 **constructor**는 Prototype Object와 같이 생성되었던 함수를 가리키고 있다.
 **______proto______**는 Prototype Link다.
 
-
-
-
+### 
 
 ```javascript
 function Person() {};
@@ -154,9 +136,7 @@ Person.prototype 객체에 eyes와 nose 속성이 추가되었다.
 
 Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/삭제 할 수 있다. kim과 park은 Person 함수를 통해 생성되었으니 Person.prototype을 참조할 수 있게 된다.
 
-
-
-
+### 
 
 ### prototype Link
 
@@ -183,9 +163,7 @@ Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/�
 
 kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾을 때 까지 상위 프로토타입을 탐색한다. 최상위인 Object의 Prototype Object까지 도달했는데도 못찾았을 경우 **undefined를** 리턴한다. 
 
-
-
-
+### 
 
 ![img](https://cdn-images-1.medium.com/max/1600/1*mwPfPuTeiQiGoPmcAXB-Kg.png)
 
@@ -195,13 +173,11 @@ kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾
 
 Object속성인 toString함수를 kim도 사용가능
 
-
+### 
 
 ####  `__proto__`라는 prototype 에 대한 link는 **상위에서 물려받은 객체의 프로토타입에 대한 정보**이며 `Prototype Object`는 자신을 원형으로 만들어질 **새로운 객체들 즉 하위로 물려줄 연결에 대한 속성**이다.
 
-
-
-
+### 
 
 ## 4.1 객체 자신이 소유하고 있는 결과만 나오게 하려면 어떻게 수정해야할까?
 
@@ -243,9 +219,7 @@ for( key in obj) {
 >
 > 자바스크립트 엔진이 판단 한 것. 체인으로 연결되어있기 때문에 내가 추가한 최상위 메소드까지 노출 시킨 것. 
 
-
-
-
+### 
 
 ## 답.
 
@@ -268,9 +242,7 @@ for( key in obj) {
 
 hasOwnProperty() => 자기 자신의 프로퍼티를 가지고 있냐
 
-
-
-
+### 
 
 ## 요약
 
