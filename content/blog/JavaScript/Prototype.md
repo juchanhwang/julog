@@ -247,3 +247,10 @@ hasOwnProperty() => 자기 자신의 프로퍼티를 가지고 있냐
 ## 요약
 
 생성자 함수가 있을 때, new 연산자를 써서 instance를 만들면 생성자 함수의 prototype이라고 하는 property가 instance에 `__proto__`  라는 property에 전달된다. 즉, 생성자 함수의 prototype과 instance에 proto라고 하는 property는 같은 객체를 참조한다.
+
+
+
+> ### 참고 및 참조
+>
+> [[Javascript ] 프로토타입 이해하기]([https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67](https://medium.com/@bluesh55/javascript-prototype-이해하기-f8e67c286b67))
+
