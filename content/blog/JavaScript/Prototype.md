@@ -11,6 +11,8 @@ draft: false
 
 ### 
 
+### 
+
 조금 더 자세히, 그리고 구체적으로 들여다보자.
 
 우리가 기본적으로 알아햐나는 개념 한 가지가 있다. **객체**는  **함수(Function)로 생성된다**는 것이다.
@@ -27,6 +29,8 @@ var obj = new Object(); // === var obj = {};
 ```
 
 위 코드에서 **Object**가 자바스크립트에서 기본적으로 제공하는 **함수**다.
+
+### 
 
 ### 
 
@@ -52,6 +56,8 @@ console.log(park.nose); // => 1
 
 ### 
 
+### 
+
 ```javascript
 function Person() {}
 
@@ -69,9 +75,13 @@ console.log(kim.eyes); // => 2
 
 ### 
 
+### 
+
 ## Prototype Link와 Prototype Object
 
 자바스크립트에는 **Prototype Link** 와 **Prototype Object**라는 것이 존재한다. 그리고, 이 둘을 통틀어 **Prototype**이라고 부른다.
+
+### 
 
 ### 
 
@@ -106,12 +116,16 @@ Constructor 자격이 부여되면 new연산자를 통해 객체를 만들어 �
 
 ### 
 
+### 
+
 <img width="100%" padding="0 12px" alt="스크린샷 2020-06-30 오후 10 05 26" src="https://cdn-images-1.medium.com/max/1600/1*NpSb7ha6lMdZpc8hFvBl2g.png">
 
 prototype 속성으로 Prototype Object에 접근
 
 **constructor**는 Prototype Object와 같이 생성되었던 함수를 가리키고 있다.
 **______proto______**는 Prototype Link다.
+
+### 
 
 ### 
 
@@ -138,6 +152,8 @@ Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/�
 
 ### 
 
+### 
+
 ### prototype Link
 
 "kim 객체는 eyes가 없는데 ??"
@@ -155,13 +171,15 @@ Prototype Object는 일반적인 객체이므로 속성을 마음대로 추가/�
 
 `__proto__`를 들여다보니 Person 함수의 Prototype Object를 가리키고 있었다.
 
+### 
 
-
-
+### 
 
 ![img](https://cdn-images-1.medium.com/max/1600/1*jMTxqTYDZGhykJQoimmb0A.png)
 
 kim객체가 eyes를 직접 가지고 있지 않기 때문에 eyes 속성을 찾을 때 까지 상위 프로토타입을 탐색한다. 최상위인 Object의 Prototype Object까지 도달했는데도 못찾았을 경우 **undefined를** 리턴한다. 
+
+### 
 
 ### 
 
@@ -175,7 +193,11 @@ Object속성인 toString함수를 kim도 사용가능
 
 ### 
 
+### 
+
 ####  `__proto__`라는 prototype 에 대한 link는 **상위에서 물려받은 객체의 프로토타입에 대한 정보**이며 `Prototype Object`는 자신을 원형으로 만들어질 **새로운 객체들 즉 하위로 물려줄 연결에 대한 속성**이다.
+
+### 
 
 ### 
 
@@ -221,6 +243,8 @@ for( key in obj) {
 
 ### 
 
+### 
+
 ## 답.
 
 ```javascript
@@ -241,6 +265,8 @@ for( key in obj) {
 ```
 
 hasOwnProperty() => 자기 자신의 프로퍼티를 가지고 있냐
+
+### 
 
 ### 
 
