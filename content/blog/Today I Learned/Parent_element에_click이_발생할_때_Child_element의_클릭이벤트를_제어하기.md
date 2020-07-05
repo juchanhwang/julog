@@ -12,7 +12,7 @@ draft: false
 - `문의` 버튼을 클릭했을 때 모달이 열리는 이슈
 - 아이템 전체 요소에 `click` event를 걸어서 자식 요소를 클릭했을 때도 event가 발생하는 원인
 
-<video width="600" controls>
+<video width="100%" height="300" controls>
   <source src="./sources/preventOpenModal.mov" type="video/mp4">
 </video>
 
