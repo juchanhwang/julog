@@ -1,21 +1,33 @@
 ---
-title: 'Bottom Navigation Scrolling(20191212)'
-date: 2019-12-12 16:00:00
+title: 'Bottom Navigation Scrolling'
+date: 2020-07-06 16:00:00
 category: 'Today I Learned'
-draft: true
-
+draft: false
 ---
 
+### 
 
+### 
+
+## TODO
+
+- 아래로 스크롤할 때, 공간의 활용을 위해 네비게이션을 아래로 숨겨야함
+-  위로 스크롤을할 때 다시 네이베이션을 보여야함
+- 스크롤이 bottom에 닿으면 네비게이션을 보여야함
+
+<video width="100%" height="400" controls>
+  <source src="./sources/bottom_navigation_scrolling.mov" type="video/mp4">
+</video>
+
+### 
+
+### 
+
+> TS
 
 ```ts
-import { Directive, ElementRef, Input, NgZone, Renderer2 } from '@angular/core';
-import { GlobalState, selectCurrentURL } from '@mapiacompany/mapia-core';
-import { Store } from '@ngrx/store';
-import { AbstractBaseComponent, enablePassive } from '@mapiacompany/armory';
-
 @Directive({ selector: '[footerScroller]' })
-export class MobileFooterScroller extends AbstractBaseComponent {
+export class MobileFooterScroller {
   @Input() footerHeight: number;
 
   beforePageYOffset = 0;
@@ -23,15 +35,6 @@ export class MobileFooterScroller extends AbstractBaseComponent {
   reqAniId: number;
 
   prevState: string;
-
-  constructor(
-    public elementRef: ElementRef,
-    public renderer: Renderer2,
-    public zone: NgZone,
-    public store$: Store<GlobalState>
-  ) {
-    super();
-  }
 
   ngAfterViewInit(): void {
     this._sub.push(
@@ -116,34 +119,27 @@ export class MobileFooterScroller extends AbstractBaseComponent {
 }
 ```
 
+### 
 
+> HTML
 
 ```html
 <div footerScroller footerHeight="45">
   <div class="footer-nav">
-    <a routerLink="/main" routerLinkActive="active">
-      <i class="fal fa-home"></i>
-      <div class="title">{{'home' | translateExt}}</div>
-    </a>
-    <a routerLink="/piano/sheet" routerLinkActive="active" #rlaMusic="routerLinkActive" class="sheet">
-      <i class="fal fa-music"></i>
-      <div class="title">{{'sheet' | translateExt}}</div>
-    </a>
-    <a routerLink="/video" routerLinkActive="active" #rlaYoutube="routerLinkActive">
-      <i class="fab fa-youtube"></i>
-      <div class="title">{{'video' | translateExt}}</div>
-    </a>
-    <a routerLink="/community" routerLinkActive="active" #rlaFree="routerLinkActive">
-      <i class="fal fa-users"></i>
-      <div class="title">{{'community' | translateExt}}</div>
-    </a>
-    <a routerLink="/store/main" [class.active]="isStore">
-      <i class="fal fa-shopping-cart"></i>
-      <div class="title">{{'store' | translateExt}}</div>
-    </a>
+    <a routerLink="/main" routerLinkActive="active"></a>
+    <a routerLink="/piano/sheet" routerLinkActive="active"></a>
+    <a routerLink="/video" routerLinkActive="active"></a>
+    <a routerLink="/community" routerLinkActive="active"></a>
+    <a routerLink="/store/main" routerLinkActive="active"></a>
   </div>
 </div>
 ```
+
+### 
+
+> SCSS
+
+- 부드러운 ux를 위해 transition을 이용한다.
 
 ```scss
 :host > div[footerScroller] {
