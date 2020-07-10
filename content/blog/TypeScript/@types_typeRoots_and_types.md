@@ -1,7 +1,7 @@
 ---
 title: "@types, typeRoots and types"
 date: 2020-07-10 16:00:00
-category: 'Today I Learned'
+category: 'TypeScript'
 draft: false
 ---
 
