@@ -20,9 +20,7 @@ draft: false
 }
 ```
 
-### 
-
-### 
+<br>
 
 >  If `types` is specified, only packages listed will be included.
 
@@ -38,13 +36,9 @@ draft: false
 
 예를들어, node, core 패키지들의 인터페이스를 `node_modules/@types`의 하위 폴더, 또 `/typings`의 하위 폴더에서만 탐색 하겠다는 것이다. @types하위 폴더에 존재하지 않으면 typings의 하위 폴더를 탐색한다. 더 구체적인 예시를 살펴보자.
 
-### 
+<br>
 
-### 
-
-### 
-
-### 
+<br>
 
 기존 방식은 `project>core>types` 경로에서 필요한 타입을 컴포넌트에 import하는 방식이었다.
 
@@ -56,7 +50,7 @@ export interface StringKeyDict<T> {
 }
 ```
 
-### 
+<br>
 
 > StringKeyDict 인터페이스를 사용하는 컴포넌트
 
@@ -66,9 +60,9 @@ import { StringKeyDict } from '../../../../../types/src/typings';
 selectedCategories: StringKeyDict = {};
 ```
 
-### 
+<br>
 
-### 
+<br>
 
 하지만 우리는 tsconfig compilerOptions의 types에 'core'패키지를 명시했다. 
 
@@ -86,7 +80,7 @@ selectedCategories: StringKeyDict = {};
 }
 ```
 
-### 
+<br>
 
 즉, core에 선언된 인터페이스를 탐색하겠다는 의미이다. 그리고, 모든 폴더를 탐색하는 것이 아닌, typeRoots에 명시된 패키지들을 순차적으로(node_modules/@types => /typings)탐색 하며 타입을 찾을 것이다.
 
@@ -100,7 +94,7 @@ export declare global {
 }
 ```
 
-### 
+<br>
 
 그렇기 때문에 특정  컴포넌트에서 StringKeyDict 타입을 명시할 때 StringDict가 선언되어있는 파일을 import할 필요가 없어졌다. 
 
@@ -111,21 +105,17 @@ export declare global {
 selectedCategories: StringKeyDict = {};
 ```
 
-### 
+<br>
 
-### 
+<br>
 
 이 방식을 사용함으로서 인터페이스를 매번 임포트해야하는 비용이 줄었다. 또한 직접 임포트하며 탐색하는 메모리 비용이 compilerOptions로 탐색하는 메모리 비용보다 적게 드는 것으로 알고있다(확실하지는 않다..) 
 
 여러 타입을 관리하고 사용해야하는 큰 프로젝트에서는 좋은 경험이 될 것이다.
 
-### 
+<br>
 
-### 
-
-### 
-
-### 
+<br>
 
 > ### 참고 및 출처
 >
