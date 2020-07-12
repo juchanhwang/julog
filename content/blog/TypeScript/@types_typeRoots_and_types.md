@@ -80,8 +80,6 @@ selectedCategories: StringKeyDict = {};
 }
 ```
 
-<br>
-
 즉, core에 선언된 인터페이스를 탐색하겠다는 의미이다. 그리고, 모든 폴더를 탐색하는 것이 아닌, typeRoots에 명시된 패키지들을 순차적으로(node_modules/@types => /typings)탐색 하며 타입을 찾을 것이다.
 
  `project>typings>core` core경로 하위에 `index.d.ts`파일을 선언한다. 
