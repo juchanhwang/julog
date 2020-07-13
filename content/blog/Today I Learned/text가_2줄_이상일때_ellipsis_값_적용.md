@@ -1,5 +1,5 @@
 ---
-title: 'text가 2줄 이상일때 ellipsis 값 적용(20200330)'
+title: 'text가 2줄 이상일때 ellipsis 값 적용'
 date: 2020-03-30 16:00:00
 category: 'Today I Learned'
 draft: false

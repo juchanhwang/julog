@@ -1,5 +1,5 @@
 ---
-title: 'Sticky Footer(20191210)'
+title: 'Sticky Footer'
 date: 2019-12-10 16:00:00
 category: 'Today I Learned'
 draft: false

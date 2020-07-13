@@ -1,5 +1,5 @@
 ---
-title: 'form data(2019113)'
+title: 'form data'
 date: 2019-11-13 16:00:00
 category: 'Today I Learned'
 draft: false

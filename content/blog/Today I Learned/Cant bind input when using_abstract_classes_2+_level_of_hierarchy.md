@@ -1,5 +1,5 @@
 ---
-title: "Cant bind input when using abstract classes 2+ level of hierarchy(20200424)"
+title: "Cant bind input when using abstract classes 2+ level of hierarchy"
 date: 2020-04-24 16:00:00
 category: 'Today I Learned'
 draft: false

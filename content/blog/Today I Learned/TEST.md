@@ -1,5 +1,5 @@
 ---
-title: "TEST(20200425)"
+title: "TEST"
 date: 2020-04-25 16:00:00
 category: 'Today I Learned'
 draft: false

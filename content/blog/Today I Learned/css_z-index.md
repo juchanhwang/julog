@@ -1,5 +1,5 @@
 ---
-title: "CSS z-index(20200617)"
+title: "CSS z-index"
 date: 2020-06-17 16:00:00
 category: 'Today I Learned'
 draft: false

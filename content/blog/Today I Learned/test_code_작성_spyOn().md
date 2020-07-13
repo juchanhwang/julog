@@ -1,5 +1,5 @@
 ---
-title: 'test code 작성 spyOn()(20200107)'
+title: 'test code 작성 spyOn()'
 date: 2020-01-07 16:00:00
 category: 'Today I Learned'
 draft: false

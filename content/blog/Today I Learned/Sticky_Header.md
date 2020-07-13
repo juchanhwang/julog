@@ -1,5 +1,5 @@
 ---
-title: 'Sticky Header(20191211)'
+title: 'Sticky Header'
 date: 2019-12-11 16:00:00
 category: 'Today I Learned'
 draft: false

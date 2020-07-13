@@ -1,5 +1,5 @@
 ---
-title: "hover에 따라 주고싶은 element 스타일링하기(20200510)"
+title: "hover에 따라 주고싶은 element 스타일링하기"
 date: 2020-05-10 16:00:00
 category: 'Today I Learned'
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: 'Angular Activated Route의 구독과 해제(20200110)'
+title: 'Angular Activated Route의 구독과 해제'
 date: 2020-01-10 16:00:00
 category: 'Today I Learned'
 draft: false

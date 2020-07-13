@@ -1,5 +1,5 @@
 ---
-title: 'repeat animation by clicking button(20200117)'
+title: 'repeat animation by clicking button'
 date: 2020-01-17 16:00:00
 category: 'Today I Learned'
 draft: false

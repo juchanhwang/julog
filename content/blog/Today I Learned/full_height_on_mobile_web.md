@@ -1,5 +1,5 @@
 ---
-title: 'Full Height On mobile Web(20200624)'
+title: 'Full Height On mobile Web'
 date: 2020-06-24 16:00:00
 category: 'Today I Learned'
 draft: false

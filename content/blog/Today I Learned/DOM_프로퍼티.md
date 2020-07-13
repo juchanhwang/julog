@@ -1,5 +1,5 @@
 ---
-title: 'DOM 프로퍼티(20191105)'
+title: 'DOM 프로퍼티'
 date: 2019-11-05 16:00:00
 category: 'Today I Learned'
 draft: false

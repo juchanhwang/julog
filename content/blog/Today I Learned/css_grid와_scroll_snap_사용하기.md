@@ -1,5 +1,5 @@
 ---
-title: "css grid와 scroll snap 사용하기(20200608)"
+title: "css grid와 scroll snap 사용하기"
 date: 2020-06-08 16:00:00
 category: 'Today I Learned'
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: '새로운 translateExt 번역 package가 생겼다!(20191107)'
+title: '새로운 translateExt 번역 package가 생겼다!'
 date: 2019-11-07 16:00:00
 category: 'Today I Learned'
 draft: false

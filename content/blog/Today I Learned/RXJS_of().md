@@ -1,5 +1,5 @@
 ---
-title: 'RXJS of()(20191120)'
+title: 'RXJS of()'
 date: 2019-11-20 16:00:00
 category: 'Today I Learned'
 draft: false

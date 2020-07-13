@@ -1,5 +1,5 @@
 ---
-title: "We detected that the Chromium Renderer process just crashed GITLAB CI/CD 에러 해결하기(20200426)"
+title: "We detected that the Chromium Renderer process just crashed GITLAB CI/CD 에러 해결하기"
 date: 2020-04-26 16:00:00
 category: 'Today I Learned'
 draft: false

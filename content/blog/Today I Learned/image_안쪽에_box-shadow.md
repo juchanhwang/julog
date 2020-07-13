@@ -1,5 +1,5 @@
 ---
-title: "image 안쪽에 box-shadow(20200605)"
+title: "image 안쪽에 box-shadow"
 date: 2020-06-05 16:00:00
 category: 'Today I Learned'
 draft: false

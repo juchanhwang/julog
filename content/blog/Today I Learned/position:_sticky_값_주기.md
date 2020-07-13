@@ -1,5 +1,5 @@
 ---
-title: 'position: sticky 값 주기(20200408)'
+title: 'position: sticky 값 주기'
 date: 2020-04-08 16:00:00
 category: 'Today I Learned'
 draft: false

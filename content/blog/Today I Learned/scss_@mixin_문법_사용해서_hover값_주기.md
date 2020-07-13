@@ -1,5 +1,5 @@
 ---
-title: 'scss @mixin 문법 사용해서 hover값 주기(20200316)'
+title: 'scss @mixin 문법 사용해서 hover값 주기'
 date: 2020-03-16 16:00:00
 category: 'Today I Learned'
 draft: false

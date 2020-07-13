@@ -1,5 +1,5 @@
 ---
-title: 'bootsrap modal css 코드 ::ng-deep 으로 캡슐화하기(20191212)'
+title: 'bootsrap modal css 코드 ::ng-deep 으로 캡슐화하기'
 date: 2019-12-12 16:00:00
 category: 'Today I Learned'
 draft: false

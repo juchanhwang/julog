@@ -1,5 +1,5 @@
 ---
-title: 'Design System(20191125)'
+title: 'Design System'
 date: 2019-11-25 16:00:00
 category: 'Today I Learned'
 draft: false

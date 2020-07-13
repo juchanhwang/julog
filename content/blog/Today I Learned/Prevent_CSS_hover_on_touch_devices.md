@@ -1,5 +1,5 @@
 ---
-title: 'Prevent CSS hover on touch devices(20200413)'
+title: 'Prevent CSS hover on touch devices'
 date: 2020-04-13 16:00:00
 category: 'Today I Learned'
 draft: false

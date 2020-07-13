@@ -1,5 +1,5 @@
 ---
-title: 'No value accessor for form control with name: "checkConfirm"(20200320)'
+title: "No value accessor for form control with name: 'checkConfirm'
 date: 2020-03-20 16:00:00
 category: 'Today I Learned'
 draft: false

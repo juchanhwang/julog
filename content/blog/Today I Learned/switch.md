@@ -1,5 +1,5 @@
 ---
-title: 'switch(20191227)'
+title: 'switch'
 date: 2019-12-27 16:00:00
 category: 'Today I Learned'
 draft: false

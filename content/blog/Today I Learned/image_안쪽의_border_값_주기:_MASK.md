@@ -1,5 +1,5 @@
 ---
-title: 'image 안쪽의 border 값 주기 : MASK(20191226)'
+title: 'image 안쪽의 border 값 주기 : MASK'
 date: 2019-12-26 16:00:00
 category: 'Today I Learned'
 draft: false

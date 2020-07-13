@@ -1,5 +1,5 @@
 ---
-title: "Parent element에 click이 발생할 때 child element의 클릭이벤트를 제어하기(20200703)"
+title: "Parent element에 click이 발생할 때 child element의 클릭이벤트를 제어하기"
 date: 2020-07-03 16:00:00
 category: 'Today I Learned'
 draft: false

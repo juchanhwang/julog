@@ -1,5 +1,5 @@
 ---
-title: 'object.keys90 / object.assign(20191112)'
+title: 'object.keys90 / object.assign'
 date: 2019-11-12 16:00:00
 category: 'Today I Learned'
 draft: false
