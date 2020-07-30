@@ -73,13 +73,12 @@ function sidefn(arr) {
     } else if (count !== 1) {
       remEl = el;
       result.push([remEl, count]);
-      console.log(result)
+
       if (result.length > 1) max(result)
       count = 1;
     }
   });
 
-  console.log(result);
   return result;
 }
 
@@ -93,6 +92,6 @@ function max(arr) {
 const arr1 = [1,1, 3,3,3];
 const arr2 = [4,4,4];
 
-console.log(solution(arr1, arr2));
+console.log(solution(arr1, arr2)); // 2
 ```
 
