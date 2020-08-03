@@ -87,12 +87,24 @@ export class KakaoMapComponent implements AfterViewInit {
 }
 ```
 
+Angular가 구성 요소의 뷰와 자식 뷰를 초기화 한 후인, **ngAfterViewInit** 시점에 맵을 랜더링한다.
+
+인자 값으로 맵 엘리먼트 요소, 좌표 값(위도, 경도), 그리고 맵의 zoom level 을 넘긴다.
+
+
+
+> `map.relayout()`함수는 지도 영역 크기를 동적으로 변경할 때(모달 형태로 맵을 띄우거나) 호출하는 함수이다. 크기를 변경한 이후에는 반드시 relayout 함수를 호출하여 픽셀과 좌표정보를 새로 설정해주어야 한다.
+
+
+
+
 <br>
 
 > show-map.component.html
 
 ```html
 <kakao-map [styleOptions]="styleOptions" [coordinate]="coordinate" [level]=level>
+</kakao-map>
 ```
 
 
