@@ -2,7 +2,7 @@
 title: "Calculate mean and concatenate string"
 date: 2020-08-07 16:00:00
 category: 'Algorithm'
-draft: true
+draft: false
 ---
 
 ## 문제 설명
