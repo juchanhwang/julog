@@ -2,7 +2,7 @@
 title: "Help Suzuki complete his chores!"
 date: 2020-08-13 16:00:00
 category: 'Algorithm'
-draft: true
+draft: false
 ---
 
 ## 문제 설명
@@ -41,6 +41,16 @@ return [7, 8, 8, 10, 10, 11]
 ## 풀이
 
 ```ts
+export function choreAssignment(chores) {
+  chores.sort((a, b) => a - b);
+  const condition: number = (chores.length / 2);
+  const result: number[] = [];
 
+  for (let i = 0; i < condition; i++) {
+    result.push(chores.splice(0, 1)[0] + chores.pop());
+  }
+
+  return result.sort((a, b) => a - b);
+}
 ```
 
