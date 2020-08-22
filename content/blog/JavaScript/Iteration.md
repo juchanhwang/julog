@@ -64,8 +64,6 @@ for (let value of myIterable) {
 
 <br>
 
-<br>
-
 ## Iterator(이터레이터, 반복자)
 
 이터레이터 프로토콜은 next 메소드를 소유하며 next 메소드를 호출하면 이터러블을 순회하며 value, done 프로퍼티를 갖는 이터레이터 리절트 객체를 반환하는 것이다. 이 규약을 준수한 객체가 이터레이터이다.
@@ -105,9 +103,13 @@ console.log(iterator.next()); // {value: 3, done: false}
 console.log(iterator.next()); // {value: undefined, done: true}
 ```
 
+<br>
 
+<br>
 
 > #### 참고 및 출처
 >
-> - [이터레이션과 for...of 문](https://poiemaweb.com/es6-iteration-for-of)
-> - 
+> - [이터레이션과 for...of 문 - POIEMAWEB](https://poiemaweb.com/es6-iteration-for-of)
+>
+> - [반복기 및 생성기 - MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+
