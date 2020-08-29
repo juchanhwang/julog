@@ -1,6 +1,6 @@
 ---
 title: 'Generator'
-date: 2020-08-25 16:00:00
+date: 2020-08-26 16:00:00
 category: 'JavaScript'
 draft: false
 ---
