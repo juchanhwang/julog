@@ -58,6 +58,15 @@ In this template...
       <li>< Taenylog />: https://taeny.dev/</li>
       <li>brouk's devlog: https://brouk-devlog.netlify.com/</li>
       <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
+      <li>DevRappers.dev: https://devrappers.dev/</li>
+      <li>Let's doodle: https://duduling-blog.netlify.app/</li>
+      <li>Hong_Devlog: https://hong-dev.github.io/</li>
+      <li>samsara-ku's devlog: https://samsara-ku.dev/</li>
+      <li>sundo.kim: https://sundo.kim/</li>
+      <li>Juunone's devlog: https://juunone.netlify.app/</li>
+      <li>cereme.dev: https://cereme.dev</li>
+      <li>taekki.dev: https://taekki.dev</li>
+      <li>kkh913's Developer Blog: https://kkh913.github.io</li>
     </ul>
   </p>
 </details>
