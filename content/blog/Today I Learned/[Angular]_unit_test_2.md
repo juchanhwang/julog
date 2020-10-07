@@ -5,9 +5,7 @@ category: 'Today I Learned'
 draft: false
 ---
 
-부모로부터 상속받은 특정 값을 테스트하기 위해서는 동일한 상황의 테스트용 컴포넌트를 만들어야한다.
-
-우선 테스트 하려고하는 컴포넌트를 만들어보자. 그리고, AbstractComponent를 extend한다. AbstractComponent에는 나중에 테스트할 때 사용할 값들을 가지고 있다.
+부모로부터 상속받은 특정 값을 활용해 테스트하기 위해서는 상속하는 부모 컴포넌트와 자식 컴포넌트를 만들어야한다. 아무 값이 없는 자식 컴포넌트를 만든다. 그리고, AbstractComponent를 extend한다. AbstractComponent에는 테스트할 때 사용할 값들을 가지고 있다.(encourage 값)
 
 ```ts
 @Component({
@@ -18,7 +16,7 @@ class TestComponent extends AbstractComponent {
 }
 ```
 
-그리고, 이 컴포넌트를 사용하는 부모 컴포넌트를 만든다. calculator 값을 넘겨주고 있다.
+부모컴포넌트(HostComponent)를 생성한다. 그리고, calculator 값을 자식 컴포넌트(TestComponent)에 넘겨준다.
 
 ```ts
 @Component({
