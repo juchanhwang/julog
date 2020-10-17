@@ -1,7 +1,7 @@
 ---
 title: "[Angular] Unit Test"
 date: 2020-09-28 16:00:00
-category: 'Today I Learned'
+category: 'Test'
 draft: false
 ---
 
