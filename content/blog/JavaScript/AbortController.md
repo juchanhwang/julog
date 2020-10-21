@@ -34,7 +34,7 @@ fetch(url, {
 controller.abort();
 ```
 
-위의 코드를 보면 controller인스턴스를 생성한 후에 fetch할 때, 인자 값 signal에 controller.signal을 넘겨주면 등록이 된다.
+위의 코드를 보면 controller인스턴스를 생성한 후에 fetch할 때, 파라미터 값 signal에 controller.signal을 넘겨주면 등록이 된다.
 
 그 후, controller.abort()를 호출하면 프로미스 객체는 'AbortError'에러를 던지고 reject한다.
 
