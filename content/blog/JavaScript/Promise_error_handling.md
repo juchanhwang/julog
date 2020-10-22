@@ -30,11 +30,15 @@ save().then().catch();
 
 `save()` 작업에서 발생하는 오류는 catch가 되지만 `handleSuccess()` 함수에서 발생하는 오류는 잡을 수 없다.
 
-<img src="./images/promise-error-handling1.png" width="600">
+<img src="./images/promise-error-handling1.png" width="500">
+
+<br>
 
 두 번째 예제에서 `.catch()`는 `save()` 또는 `handleSuccess()`의 rejections을 처리한다.
 
-<img src="./images/promise-error-handling2.png" width="500">
+<img src="./images/promise-error-handling2.png" width="400">
+
+<br>
 
 > 또한 이런 방식으로 처리해줄 수도 있다.
 
