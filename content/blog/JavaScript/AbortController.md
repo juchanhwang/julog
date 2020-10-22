@@ -66,7 +66,7 @@ Node.js V15.0.0에서는 AbortController 기능을 지원할 예정이다.
 
 <br>
 
-> ## 참조 및 참고
+> ## 참조 및 출처
 >
 > - [AbortController-MDN](https://developer.mozilla.org/ko/docs/Web/API/AbortController)
 >
