@@ -1,7 +1,7 @@
 ---
 title: "[Angular] Material Issue"
 date: 2020-08-31 16:00:00
-category: 'Today I Learned'
+category: 'Angular'
 draft: false
 ---
 

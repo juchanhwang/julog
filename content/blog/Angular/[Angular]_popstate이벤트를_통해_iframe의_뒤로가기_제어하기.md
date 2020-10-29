@@ -1,7 +1,7 @@
 ---
 title: "[Angular] popstate이벤트를 통해 iframe의 뒤로가기 제어하기"
 date: 2020-05-29 16:00:00
-category: 'Today I Learned'
+category: 'Angular'
 draft: false
 ---
 

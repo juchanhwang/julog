@@ -1,7 +1,7 @@
 ---
 title: "[Angular] How to handle query parameters in a router link"
 date: 2020-05-08 16:00:00
-category: 'Today I Learned'
+category: 'Angular'
 draft: false
 ---
 

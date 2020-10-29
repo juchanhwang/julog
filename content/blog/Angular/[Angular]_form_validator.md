@@ -1,7 +1,7 @@
 ---
 title: '[Angular] form validator'
 date: 2020-07-24 16:00:00
-category: 'Today I Learned'
+category: 'Angular'
 draft: true
 ---
 

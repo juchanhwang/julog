@@ -1,7 +1,7 @@
 ---
 title: 'ng-template & ng-container'
 date: 2019-11-06 16:00:00
-category: 'Today I Learned'
+category: 'Angular'
 draft: false
 ---
 
