@@ -1,5 +1,5 @@
 ---
-title: "[Angular] Material Issue"
+title: "Material Issue"
 date: 2020-08-31 16:00:00
 category: 'Angular'
 draft: false

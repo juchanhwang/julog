@@ -1,5 +1,5 @@
 ---
-title: '[Angular] form validator'
+title: 'form validator'
 date: 2020-07-24 16:00:00
 category: 'Angular'
 draft: true

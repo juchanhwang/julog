@@ -1,5 +1,5 @@
 ---
-title: 'Angular ElementRef'
+title: 'ElementRef'
 date: 2019-11-26 16:00:00
 category: 'Angular'
 draft: false
