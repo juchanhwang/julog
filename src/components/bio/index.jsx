@@ -24,7 +24,8 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
+                <Link to={'https://juchan-about.notion.site/11cb8455184f8036bcdfca44d910eb3d'}
+                      className="author-name-content">
                   <span>@{author}</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
@@ -54,27 +55,27 @@ export const Bio = () => (
 )
 
 const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile.png/" }) {
-      childImageSharp {
-        fixed(width: 72, height: 72) {
-          ...GatsbyImageSharpFixed
+    query BioQuery {
+        avatar: file(absolutePath: { regex: "/profile.png/" }) {
+            childImageSharp {
+                fixed(width: 72, height: 72) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
         }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        introduction
-        social {
-          twitter
-          github
-          medium
-          facebook
+        site {
+            siteMetadata {
+                author
+                introduction
+                social {
+                    twitter
+                    github
+                    medium
+                    facebook
+                }
+            }
         }
-      }
     }
-  }
 `
 
 export default Bio
