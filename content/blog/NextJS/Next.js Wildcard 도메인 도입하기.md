@@ -127,11 +127,22 @@ const STATIC_FILE_REGEX = /\.(png|jpg|jpeg|gif|webp|svg|ico)$/i;
  * 미들웨어 처리를 건너뛰어야 하는 경로인지 확인합니다.
  * (정적 파일, 이미지, 특정 예외 경로)
  */
-const shouldSkipMiddleware = (pathname: string): boolean => {
+const isStaticOrIgnoredPath = (pathname: string): boolean => {
   if (EXCLUDED_PATHS.has(pathname)) {
     return true;
   }
   return STATIC_FILE_REGEX.test(pathname);
+};
+
+/**
+ * 호스트를 통해 유효한 조직 코드를 조회합니다.
+ * 조직 정보가 없거나 코드가 유효하지 않으면 undefined를 반환합니다.
+ */
+const fetchValidOrganizationCode = async (
+        host: string,
+): Promise<string | undefined> => {
+  const organization = await getOrganizationCodeByUrl(host);
+  return organization?.code;
 };
 
 /**
@@ -164,16 +175,14 @@ export const middleware = async (request: NextRequest) => {
   const { pathname } = request.nextUrl;
   const host = request.headers.get('host') || '';
 
-  if (shouldSkipMiddleware(pathname)) {
+  if (isStaticOrIgnoredPath(pathname)) {
     return NextResponse.next();
   }
 
-  const organization = await getOrganizationCodeByUrl(host);
-  if (!organization?.code) {
+  const code = await fetchValidOrganizationCode(host);
+  if (!code) {
     return NextResponse.next();
   }
-
-  const { code } = organization;
 
   if (hasOrganizationCodePrefix(pathname, code)) {
     return createRedirectResponse(request, code);
