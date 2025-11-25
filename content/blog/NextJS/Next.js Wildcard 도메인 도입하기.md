@@ -61,7 +61,7 @@ Vercel 공식 문서에 작성 되어있는 대로 도메인에 와일드 카드
 ```tsx
 export const middleware = async (request: NextRequest) => {
   const url = request.nextUrl.clone();
-  const path = url.pathname;
+  const { pathname } = request.nextUrl;
   const host = request.headers.get('host') || '';
 
   const organization = await getOrganizationCodeByUrl(host);
@@ -79,13 +79,11 @@ export const middleware = async (request: NextRequest) => {
 코드가 식별된 후에, 최상위 path인 `/organizationCode` 와 일치하는지 비교한다. path와 일치하면, path를 제거한 주소로 redirect한다.
 
 ```tsx
-  const isCorrectPath = path.startsWith(`/${code}`);
-
-  if (isCorrectPath) {
-    url.pathname = path.replace(`/${code}`, '');
-    return NextResponse.redirect(url);
-  }
- 
+const createRedirectResponse = (request: NextRequest, code: string) => {
+  const url = request.nextUrl.clone();
+  url.pathname = request.nextUrl.pathname.replace(`/${code}`, '');
+  return NextResponse.redirect(url);
+}; 
 ```
 
 예를들어, 현재 `org1.dtlab.co.kr/org1`에 접속하면 내부적으로 코드를 뺀 `org1.dtlab.co.kr`로 리다이렉트 합니다. 즉, `/org1`와같이 path를 노출하지 않기 위해서, path를 제거하는 redirect 코드를 삽입하였습니다.
@@ -93,13 +91,11 @@ export const middleware = async (request: NextRequest) => {
 반대로, 코드가 일치하지 않으면 코드를 추가하여 rewrite한다.
 
 ```tsx
-
-  const isCorrectPath = path.startsWith(`/${code}`);
-  
-  if (!isCorrectPath) {
-    url.pathname = `/${code}${path}`;
-    return NextResponse.rewrite(url);
-  }
+const createRewriteResponse = (request: NextRequest, code: string) => {
+  const url = request.nextUrl.clone();
+  url.pathname = `/${code}${request.nextUrl.pathname}`;
+  return NextResponse.rewrite(url);
+};
 ```
 
 예를들어, `org1.dtlab.co.kr`로 리다이렉트 후에 원래 정상적으로 동작하는 주소인 `org1.dtlab.co.kr/org1`로 rewrite합니다. 결과적으로 path에서는 기관 코드가 숨겨지는 효과를 얻을 수 있다.
@@ -124,56 +120,72 @@ import type { NextRequest } from 'next/server';
 
 import { getOrganizationCodeByUrl } from './apollo/getOrganizationCodeByUrl';
 
-const IMAGE_EXTENSIONS = [
-  '.png',
-  '.jpg',
-  '.jpeg',
-  '.gif',
-  '.webp',
-  '.svg',
-  '.ico',
-];
+const EXCLUDED_PATHS = new Set(['/b2b/graphql', '/mockServiceWorker.js']);
+const STATIC_FILE_REGEX = /\.(png|jpg|jpeg|gif|webp|svg|ico)$/i;
+
+/**
+ * 미들웨어 처리를 건너뛰어야 하는 경로인지 확인합니다.
+ * (정적 파일, 이미지, 특정 예외 경로)
+ */
+const shouldSkipMiddleware = (pathname: string): boolean => {
+  if (EXCLUDED_PATHS.has(pathname)) {
+    return true;
+  }
+  return STATIC_FILE_REGEX.test(pathname);
+};
+
+/**
+ * URL 경로가 이미 조직 코드로 시작하는지 확인합니다.
+ */
+const hasOrganizationCodePrefix = (pathname: string, code: string): boolean =>
+        pathname.startsWith(`/${code}`);
+
+/**
+ * 조직 코드를 제거한 URL로 리다이렉트 응답을 생성합니다.
+ * (Case: /CODE/dashboard -> /dashboard)
+ */
+const createRedirectResponse = (request: NextRequest, code: string) => {
+  const url = request.nextUrl.clone();
+  url.pathname = request.nextUrl.pathname.replace(`/${code}`, '');
+  return NextResponse.redirect(url);
+};
+
+/**
+ * 조직 코드를 포함한 내부 경로로 Rewrite 응답을 생성합니다.
+ * (Case: /dashboard -> /CODE/dashboard)
+ */
+const createRewriteResponse = (request: NextRequest, code: string) => {
+  const url = request.nextUrl.clone();
+  url.pathname = `/${code}${request.nextUrl.pathname}`;
+  return NextResponse.rewrite(url);
+};
 
 export const middleware = async (request: NextRequest) => {
-  const url = request.nextUrl.clone();
-  const path = url.pathname;
+  const { pathname } = request.nextUrl;
   const host = request.headers.get('host') || '';
 
+  if (shouldSkipMiddleware(pathname)) {
+    return NextResponse.next();
+  }
+
   const organization = await getOrganizationCodeByUrl(host);
-  if (!organization) {
+  if (!organization?.code) {
     return NextResponse.next();
   }
 
   const { code } = organization;
 
-  const isImageRequest = IMAGE_EXTENSIONS.some((ext) => path.endsWith(ext));
-  const isCorrectPath = path.startsWith(`/${code}`);
-
-  if (isCorrectPath) {
-    url.pathname = path.replace(`/${code}`, '');
-    return NextResponse.redirect(url);
+  if (hasOrganizationCodePrefix(pathname, code)) {
+    return createRedirectResponse(request, code);
   }
 
-  if (!isImageRequest && !isCorrectPath) {
-    url.pathname = `/${code}${path}`;
-    return NextResponse.rewrite(url);
-  }
-
-  return NextResponse.next();
+  return createRewriteResponse(request, code);
 };
 
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
-  ],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
+
 
 ```
 
